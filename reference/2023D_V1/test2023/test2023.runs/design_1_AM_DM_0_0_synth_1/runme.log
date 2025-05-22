@@ -1,0 +1,716 @@
+
+*** Running vivado
+    with args -log design_1_AM_DM_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_AM_DM_0_0.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_AM_DM_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_AM_DM_0_0 -part xc7z035ffg676-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11140
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1281.543 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_AM_DM_0_0' [d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_AM_DM_0_0/synth/design_1_AM_DM_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'AM_DM' [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/new/AM_DM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MOV_AVR' [D:/Project/ZYNQ/7020/verilog_data/MOV_AVR.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'MOV_AVR' (0#1) [D:/Project/ZYNQ/7020/verilog_data/MOV_AVR.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Down_sample_2' [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/Down_sample.v:25]
+INFO: [Synth 8-6157] synthesizing module 'FIR_DS3' [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/PLL/fir.sv:188]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_DS3' (0#1) [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/PLL/fir.sv:188]
+INFO: [Synth 8-6157] synthesizing module 'clk_diver' [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_diver' (0#1) [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_diver__parameterized0' [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_diver__parameterized0' (0#1) [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_diver__parameterized1' [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_diver__parameterized1' (0#1) [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_diver__parameterized2' [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_diver__parameterized2' (0#1) [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_diver__parameterized3' [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_diver__parameterized3' (0#1) [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_diver__parameterized4' [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_diver__parameterized4' (0#1) [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/clk_div.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Down_sample_2' (0#1) [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/verilog_data/Down_sample.v:25]
+INFO: [Synth 8-6157] synthesizing module 'AM_FIR' [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/PLL/fir.sv:242]
+INFO: [Synth 8-6155] done synthesizing module 'AM_FIR' (0#1) [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/imports/PLL/fir.sv:242]
+INFO: [Synth 8-6155] done synthesizing module 'AM_DM' (0#1) [D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/new/AM_DM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_AM_DM_0_0' (0#1) [d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_AM_DM_0_0/synth/design_1_AM_DM_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 1526.504 ; gain = 244.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 1526.504 ; gain = 244.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 1526.504 ; gain = 244.961
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1526.504 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1782.004 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1867.188 ; gain = 85.184
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:55 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:55 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:55 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:40 ; elapsed = 00:04:25 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   34 Bit       Adders := 2     
+	   2 Input   24 Bit       Adders := 234   
+	   3 Input   16 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 90    
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	               34 Bit    Registers := 2     
+	               24 Bit    Registers := 246   
+	               16 Bit    Registers := 8303  
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 31    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Debug: swapped A/B pins for adder 000002EDF953D6B0
+DSP Debug: swapped A/B pins for adder 000002EDE70CE8A0
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x37).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x139).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3db).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x849).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0xc6d).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0xa25).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3f6fa).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3c766).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x376d0).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x312a9).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x2c3e5).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x2d00f).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x38c5d).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x14276).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*(B:0xe04).
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*(B:0x1c092).
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*(B:0x1da3a).
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*(B:0x19f7e).
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*(B:0x4938).
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*(B:0x13f68).
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3ffed).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3ffea).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3ffee).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x19).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x31).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x4b).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x63).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x75).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x7c).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x73).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x55).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3ffd6).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3ff7a).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3ff13).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3feae).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3fe59).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3fe24).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3fe20).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3fe5d).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3fee6).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x3ffc1).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0xed).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x263).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x412).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x5e2).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x7b8).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x973).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0xaf4).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0xc1e).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0xcdb).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0xd1b).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:02 ; elapsed = 00:08:57 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FIR_DS3     | A*(B:0x37)    | 24     | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x139)   | 24     | 10     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x3db)   | 24     | 11     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x849)   | 24     | 13     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0xc6d)   | 24     | 13     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0xa25)   | 24     | 13     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x3f6fa) | 24     | 13     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x3c766) | 24     | 15     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x376d0) | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x312a9) | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x2c3e5) | 24     | 18     | -      | -      | 42     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x2d00f) | 24     | 18     | -      | -      | 42     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x38c5d) | 24     | 16     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x14276) | 24     | 18     | -      | -      | 42     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0xe04)   | 24     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x1c092) | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x1da3a) | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x19f7e) | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x4938)  | 24     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A*(B:0x13f68) | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3ffed) | 16     | 6      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3ffea) | 16     | 6      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3ffee) | 16     | 6      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x19)    | 16     | 6      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x31)    | 16     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x4b)    | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x63)    | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x75)    | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x7c)    | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x73)    | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x55)    | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3ffd6) | 16     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3ff7a) | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3ff13) | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3feae) | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3fe59) | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3fe24) | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3fe20) | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3fe5d) | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3fee6) | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x3ffc1) | 16     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0xed)    | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x263)   | 16     | 11     | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x412)   | 16     | 12     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x5e2)   | 16     | 12     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x7b8)   | 16     | 12     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0x973)   | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0xaf4)   | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0xc1e)   | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0xcdb)   | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A*(B:0xd1b)   | 16     | 13     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:03 ; elapsed = 00:09:06 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:03 ; elapsed = 00:09:06 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4094) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4095) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4096) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4097) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4098) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4099) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4100) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4101) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4102) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4103) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4104) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4105) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4106) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4107) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4108) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4109) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4110) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4111) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4112) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4113) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4114) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4115) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4116) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4117) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4118) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4119) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4120) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4121) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4122) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4123) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4124) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4125) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4126) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4127) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4128) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4129) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4130) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4131) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4132) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4133) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4134) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4135) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4136) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4137) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4138) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4139) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4140) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4141) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4142) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4143) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4144) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4145) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4146) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4147) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4148) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4149) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4150) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4151) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4152) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4153) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4154) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4155) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4156) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4157) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4158) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4159) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4160) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4161) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4162) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4163) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4164) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4165) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4166) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4167) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4168) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4169) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4170) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4171) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4172) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4173) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4174) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4175) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4176) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4177) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4178) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4179) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4180) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4181) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4182) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4183) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4184) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4185) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4186) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4187) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4188) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4189) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4190) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4191) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4192) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Synth 8-3332] Sequential element (data_buf_reg_r_4193) is unused and will be removed from module design_1_AM_DM_0_0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:48 ; elapsed = 00:14:27 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:50 ; elapsed = 00:14:31 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:50 ; elapsed = 00:14:31 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:50 ; elapsed = 00:14:33 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:50 ; elapsed = 00:14:33 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:50 ; elapsed = 00:14:33 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:50 ; elapsed = 00:14:33 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|srl_MOV_AVR__1     | data_buf_reg[4095][15]                         | 4096   | 16    | YES          | NO                 | YES               | 0      | 2048    | 
+|srl                | data_buf_reg[4095][15]                         | 4096   | 16    | YES          | NO                 | YES               | 0      | 2048    | 
+|design_1_AM_DM_0_0 | data_buf_reg_r_8188                            | 3095   | 1     | NO           | NO                 | YES               | 0      | 97      | 
+|design_1_AM_DM_0_0 | inst/AM_FIR_LP/genblk2[100].delay_reg[100][15] | 6      | 16    | YES          | NO                 | YES               | 16     | 0       | 
++-------------------+------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FIR_DS3     | A'*B        | 30     | 6      | -      | -      | 31     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 9      | -      | -      | 34     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 10     | -      | -      | 35     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 12     | -      | -      | 37     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 12     | -      | -      | 37     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 12     | -      | -      | 37     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 18     | -      | -      | 37     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 18     | -      | -      | 39     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 18     | -      | -      | 41     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 18     | -      | -      | 41     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 18     | -      | -      | 42     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 18     | -      | -      | 42     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 18     | -      | -      | 40     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 17     | -      | -      | 42     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 12     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A'*B        | 30     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 6      | -      | -      | 31     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 9      | -      | -      | 34     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 10     | -      | -      | 35     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 39     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 40     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 6      | -      | -      | 31     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 9      | -      | -      | 34     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 10     | -      | -      | 35     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 39     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 40     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 6      | -      | -      | 31     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 9      | -      | -      | 34     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 10     | -      | -      | 35     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 39     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 40     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 6      | -      | -      | 31     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 9      | -      | -      | 34     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 10     | -      | -      | 35     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 39     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 40     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 6      | -      | -      | 31     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 9      | -      | -      | 34     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 10     | -      | -      | 35     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 37     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 39     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 18     | -      | -      | 40     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 12     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_DS3     | A''*B       | 30     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 22     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 22     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 22     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 5      | -      | -      | 22     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 6      | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 7      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 7      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 7      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 7      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 7      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 7      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 25     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 25     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 18     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 8      | -      | -      | 25     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 10     | -      | -      | 27     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 11     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 11     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 11     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 12     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 12     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 12     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 12     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|AM_FIR      | A'*B        | 30     | 12     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |  2139|
+|2     |DSP48E1 |   151|
+|4     |LUT1    |   492|
+|5     |LUT2    |  7994|
+|6     |LUT3    |    42|
+|7     |LUT4    |    76|
+|8     |LUT5    |     3|
+|9     |LUT6    |     2|
+|10    |SRL16E  |    16|
+|11    |SRLC32E |  4193|
+|12    |FDRE    | 11125|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:50 ; elapsed = 00:14:33 . Memory (MB): peak = 1867.188 ; gain = 585.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:40 ; elapsed = 00:14:15 . Memory (MB): peak = 1867.188 ; gain = 244.961
+Synthesis Optimization Complete : Time (s): cpu = 00:04:50 ; elapsed = 00:14:33 . Memory (MB): peak = 1867.188 ; gain = 585.645
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.297 . Memory (MB): peak = 1867.188 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2290 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1867.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: ae291213
+INFO: [Common 17-83] Releasing license: Synthesis
+143 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:52 ; elapsed = 00:14:43 . Memory (MB): peak = 1867.188 ; gain = 585.645
+INFO: [Common 17-1381] The checkpoint 'D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_AM_DM_0_0_synth_1/design_1_AM_DM_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_AM_DM_0_0, cache-ID = b10c8d8fb14b0978
+INFO: [Coretcl 2-1174] Renamed 17 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_AM_DM_0_0_synth_1/design_1_AM_DM_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_AM_DM_0_0_utilization_synth.rpt -pb design_1_AM_DM_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  5 02:44:04 2023...

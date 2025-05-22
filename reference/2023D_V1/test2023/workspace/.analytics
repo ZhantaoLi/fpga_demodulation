@@ -1,0 +1,497 @@
+timestamp=[2023-08-02 12:59:01], mode=WORKBENCH_START, duration=0:00:05.308, duration_ms=5308, data={}
+timestamp=[2023-08-02 12:59:01], mode=WORKBENCH_UI_INIT, duration=0:00:00.259, duration_ms=259, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-08-02 12:59:02], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.037, duration_ms=37, data={}
+timestamp=[2023-08-02 12:59:56], mode=PLATFORM_CREATION, duration=0:00:17.683, duration_ms=17683, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2023-08-02 13:00:48], mode=APP_CREATION, duration=0:00:04.793, duration_ms=4793, data={name=pstop, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=DS2023, application_type=application}
+timestamp=[2023-08-02 13:02:27], mode=PLATFORM_GENERATION, duration=0:00:09.262, duration_ms=9262, data={name=DS2023}
+timestamp=[2023-08-02 13:02:29], mode=BUILD, duration=0:00:01.177, duration_ms=1177, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:02:33], mode=BUILD, duration=0:00:04.313, duration_ms=4313, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:03:16], mode=BUILD, duration=0:00:00.663, duration_ms=663, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:03:19], mode=BUILD, duration=0:00:03.557, duration_ms=3557, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:07:35], mode=BUILD, duration=0:00:00.627, duration_ms=627, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:07:39], mode=BUILD, duration=0:00:03.629, duration_ms=3629, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:08:58], mode=BUILD, duration=0:00:00.548, duration_ms=548, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:09:01], mode=BUILD, duration=0:00:03.483, duration_ms=3483, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:10:18], mode=BUILD, duration=0:00:00.477, duration_ms=477, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:10:21], mode=BUILD, duration=0:00:03.573, duration_ms=3573, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:10:52], mode=BUILD, duration=0:00:00.477, duration_ms=477, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:10:56], mode=BUILD, duration=0:00:03.470, duration_ms=3470, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:14:32], mode=BUILD, duration=0:00:00.540, duration_ms=540, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:14:36], mode=BUILD, duration=0:00:03.539, duration_ms=3539, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:40:42], mode=PLATFORM_GENERATION, duration=0:00:16.170, duration_ms=16170, data={name=DS2023}
+timestamp=[2023-08-02 13:40:55], mode=BUILD, duration=0:00:01.042, duration_ms=1042, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 13:41:03], mode=BUILD, duration=0:00:03.700, duration_ms=3700, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 14:31:32], mode=PLATFORM_GENERATION, duration=0:00:22.917, duration_ms=22917, data={name=DS2023}
+timestamp=[2023-08-02 14:31:45], mode=BUILD, duration=0:00:01.102, duration_ms=1102, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 14:31:53], mode=BUILD, duration=0:00:03.666, duration_ms=3666, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 16:33:55], mode=PLATFORM_GENERATION, duration=0:00:09.412, duration_ms=9412, data={name=DS2023}
+timestamp=[2023-08-02 16:34:11], mode=BUILD, duration=0:00:01.243, duration_ms=1243, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 16:34:20], mode=BUILD, duration=0:00:03.928, duration_ms=3928, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 17:06:32], mode=PLATFORM_GENERATION, duration=0:00:25.938, duration_ms=25938, data={name=DS2023}
+timestamp=[2023-08-02 17:06:48], mode=BUILD, duration=0:00:01.089, duration_ms=1089, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 17:06:57], mode=BUILD, duration=0:00:03.662, duration_ms=3662, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 17:51:07], mode=PLATFORM_GENERATION, duration=0:00:11.153, duration_ms=11153, data={name=DS2023}
+timestamp=[2023-08-02 17:51:23], mode=BUILD, duration=0:00:01.039, duration_ms=1039, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 17:51:32], mode=BUILD, duration=0:00:03.611, duration_ms=3611, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 19:03:11], mode=PLATFORM_GENERATION, duration=0:00:04.994, duration_ms=4994, data={name=DS2023}
+timestamp=[2023-08-02 19:03:28], mode=BUILD, duration=0:00:01.037, duration_ms=1037, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 19:03:36], mode=BUILD, duration=0:00:03.674, duration_ms=3674, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 19:59:11], mode=PLATFORM_GENERATION, duration=0:00:20.815, duration_ms=20815, data={name=DS2023}
+timestamp=[2023-08-02 19:59:28], mode=BUILD, duration=0:00:01.294, duration_ms=1294, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 19:59:36], mode=BUILD, duration=0:00:03.674, duration_ms=3674, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 20:28:30], mode=PLATFORM_GENERATION, duration=0:00:07.820, duration_ms=7820, data={name=DS2023}
+timestamp=[2023-08-02 20:28:47], mode=BUILD, duration=0:00:01.089, duration_ms=1089, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 20:28:55], mode=BUILD, duration=0:00:03.972, duration_ms=3972, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 21:20:07], mode=PLATFORM_GENERATION, duration=0:00:14.944, duration_ms=14944, data={name=DS2023}
+timestamp=[2023-08-02 21:20:24], mode=BUILD, duration=0:00:01.162, duration_ms=1162, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 21:20:32], mode=BUILD, duration=0:00:03.985, duration_ms=3985, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 21:46:11], mode=PLATFORM_GENERATION, duration=0:00:28.374, duration_ms=28374, data={name=DS2023}
+timestamp=[2023-08-02 21:46:28], mode=BUILD, duration=0:00:01.226, duration_ms=1226, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 21:46:36], mode=BUILD, duration=0:00:03.989, duration_ms=3989, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 22:08:39], mode=PLATFORM_GENERATION, duration=0:00:08.388, duration_ms=8388, data={name=DS2023}
+timestamp=[2023-08-02 22:08:55], mode=BUILD, duration=0:00:01.160, duration_ms=1160, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 22:09:04], mode=BUILD, duration=0:00:03.801, duration_ms=3801, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 22:59:39], mode=PLATFORM_GENERATION, duration=0:00:29.913, duration_ms=29913, data={name=DS2023}
+timestamp=[2023-08-02 22:59:56], mode=BUILD, duration=0:00:01.099, duration_ms=1099, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 23:00:04], mode=BUILD, duration=0:00:03.762, duration_ms=3762, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 23:33:44], mode=PLATFORM_GENERATION, duration=0:00:05.645, duration_ms=5645, data={name=DS2023}
+timestamp=[2023-08-02 23:34:00], mode=BUILD, duration=0:00:01.161, duration_ms=1161, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 23:34:09], mode=BUILD, duration=0:00:03.963, duration_ms=3963, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-02 23:41:44], mode=WORKBENCH_START, duration=0:00:06.630, duration_ms=6630, data={}
+timestamp=[2023-08-02 23:41:45], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.028, duration_ms=28, data={}
+timestamp=[2023-08-02 23:41:45], mode=WORKBENCH_UI_INIT, duration=0:00:00.693, duration_ms=693, data={editors_count=6, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=DS2023,RemoteSystemsTempFiles,pstop,pstop_system}
+timestamp=[2023-08-03 00:17:14], mode=PLATFORM_GENERATION, duration=0:00:28.410, duration_ms=28410, data={name=DS2023}
+timestamp=[2023-08-03 00:17:30], mode=BUILD, duration=0:00:01.114, duration_ms=1114, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 00:17:38], mode=BUILD, duration=0:00:03.946, duration_ms=3946, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 00:35:46], mode=PLATFORM_GENERATION, duration=0:00:04.799, duration_ms=4799, data={name=DS2023}
+timestamp=[2023-08-03 00:36:02], mode=BUILD, duration=0:00:01.111, duration_ms=1111, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 00:36:10], mode=BUILD, duration=0:00:03.740, duration_ms=3740, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 01:09:19], mode=PLATFORM_GENERATION, duration=0:00:05.066, duration_ms=5066, data={name=DS2023}
+timestamp=[2023-08-03 01:09:35], mode=BUILD, duration=0:00:01.097, duration_ms=1097, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 01:09:43], mode=BUILD, duration=0:00:03.856, duration_ms=3856, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 08:46:48], mode=WORKBENCH_START, duration=0:00:05.544, duration_ms=5544, data={}
+timestamp=[2023-08-03 08:46:48], mode=WORKBENCH_UI_INIT, duration=0:00:00.522, duration_ms=522, data={editors_count=6, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=DS2023,RemoteSystemsTempFiles,pstop,pstop_system}
+timestamp=[2023-08-03 08:46:49], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.037, duration_ms=37, data={}
+timestamp=[2023-08-03 09:08:49], mode=PLATFORM_GENERATION, duration=0:00:32.518, duration_ms=32518, data={name=DS2023}
+timestamp=[2023-08-03 09:09:08], mode=BUILD, duration=0:00:01.166, duration_ms=1166, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 09:09:16], mode=BUILD, duration=0:00:03.926, duration_ms=3926, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 10:48:53], mode=PLATFORM_GENERATION, duration=0:00:07.477, duration_ms=7477, data={name=DS2023}
+timestamp=[2023-08-03 10:49:12], mode=BUILD, duration=0:00:01.242, duration_ms=1242, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 10:49:20], mode=BUILD, duration=0:00:03.814, duration_ms=3814, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:12:22], mode=WORKBENCH_START, duration=0:00:06.849, duration_ms=6849, data={}
+timestamp=[2023-08-03 11:12:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.032, duration_ms=32, data={}
+timestamp=[2023-08-03 11:12:23], mode=WORKBENCH_UI_INIT, duration=0:00:00.729, duration_ms=729, data={editors_count=6, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DS2023,RemoteSystemsTempFiles,pstop,pstop_system}
+timestamp=[2023-08-03 11:13:05], mode=BUILD, duration=0:00:01.929, duration_ms=1929, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:13:39], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:13:43], mode=BUILD, duration=0:00:03.794, duration_ms=3794, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:18:22], mode=BUILD, duration=0:00:00.295, duration_ms=295, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:18:53], mode=BUILD, duration=0:00:00.289, duration_ms=289, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:19:00], mode=BUILD, duration=0:00:00.595, duration_ms=595, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:19:04], mode=BUILD, duration=0:00:03.752, duration_ms=3752, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:21:21], mode=BUILD, duration=0:00:00.553, duration_ms=553, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:21:25], mode=BUILD, duration=0:00:03.648, duration_ms=3648, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:22:32], mode=BUILD, duration=0:00:00.738, duration_ms=738, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 11:22:36], mode=BUILD, duration=0:00:03.697, duration_ms=3697, data={name=pstop_system, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 15:15:30], mode=PLATFORM_GENERATION, duration=0:00:07.654, duration_ms=7654, data={name=DS2023}
+timestamp=[2023-08-03 15:15:54], mode=BUILD, duration=0:00:01.494, duration_ms=1494, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 15:16:27], mode=BUILD, duration=0:00:00.302, duration_ms=302, data={name=pstop, configuration=Debug, clean_build=false}
+timestamp=[2023-08-03 15:16:39], mode=BUILD, duration=0:00:01.226, duration_ms=1226, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 15:16:43], mode=BUILD, duration=0:00:03.899, duration_ms=3899, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 15:20:41], mode=BUILD, duration=0:00:00.674, duration_ms=674, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 15:20:44], mode=BUILD, duration=0:00:03.616, duration_ms=3616, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 16:31:21], mode=BUILD, duration=0:00:02.391, duration_ms=2391, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 16:31:28], mode=BUILD, duration=0:00:06.942, duration_ms=6942, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 17:12:44], mode=PLATFORM_GENERATION, duration=0:00:05.013, duration_ms=5013, data={name=DS2023}
+timestamp=[2023-08-03 17:13:07], mode=BUILD, duration=0:00:01.335, duration_ms=1335, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 17:13:15], mode=BUILD, duration=0:00:03.579, duration_ms=3579, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 17:17:57], mode=BUILD, duration=0:00:00.545, duration_ms=545, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 17:18:01], mode=BUILD, duration=0:00:03.659, duration_ms=3659, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 17:56:28], mode=PLATFORM_GENERATION, duration=0:00:04.696, duration_ms=4696, data={name=DS2023}
+timestamp=[2023-08-03 17:56:51], mode=BUILD, duration=0:00:01.400, duration_ms=1400, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 17:56:59], mode=BUILD, duration=0:00:03.631, duration_ms=3631, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 18:17:50], mode=PLATFORM_GENERATION, duration=0:00:04.596, duration_ms=4596, data={name=DS2023}
+timestamp=[2023-08-03 18:18:13], mode=BUILD, duration=0:00:01.348, duration_ms=1348, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 18:18:21], mode=BUILD, duration=0:00:03.654, duration_ms=3654, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 18:53:01], mode=PLATFORM_GENERATION, duration=0:00:07.684, duration_ms=7684, data={name=DS2023}
+timestamp=[2023-08-03 18:53:24], mode=BUILD, duration=0:00:01.585, duration_ms=1585, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 18:53:32], mode=BUILD, duration=0:00:03.815, duration_ms=3815, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:19:37], mode=BUILD, duration=0:00:00.379, duration_ms=379, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:20:47], mode=BUILD, duration=0:00:00.971, duration_ms=971, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:20:51], mode=BUILD, duration=0:00:03.810, duration_ms=3810, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:26:30], mode=BUILD, duration=0:00:00.535, duration_ms=535, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:26:34], mode=BUILD, duration=0:00:03.661, duration_ms=3661, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:29:08], mode=BUILD, duration=0:00:00.528, duration_ms=528, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:29:12], mode=BUILD, duration=0:00:03.597, duration_ms=3597, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:29:41], mode=BUILD, duration=0:00:00.556, duration_ms=556, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:29:45], mode=BUILD, duration=0:00:03.648, duration_ms=3648, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:30:27], mode=BUILD, duration=0:00:00.543, duration_ms=543, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:30:31], mode=BUILD, duration=0:00:03.606, duration_ms=3606, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:33:40], mode=PLATFORM_GENERATION, duration=0:00:04.616, duration_ms=4616, data={name=DS2023}
+timestamp=[2023-08-03 19:34:04], mode=BUILD, duration=0:00:01.214, duration_ms=1214, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:34:12], mode=BUILD, duration=0:00:03.585, duration_ms=3585, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:57:28], mode=PLATFORM_GENERATION, duration=0:00:04.810, duration_ms=4810, data={name=DS2023}
+timestamp=[2023-08-03 19:57:52], mode=BUILD, duration=0:00:01.360, duration_ms=1360, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 19:58:00], mode=BUILD, duration=0:00:03.725, duration_ms=3725, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 20:30:03], mode=PLATFORM_GENERATION, duration=0:00:04.838, duration_ms=4838, data={name=DS2023}
+timestamp=[2023-08-03 20:30:26], mode=BUILD, duration=0:00:01.351, duration_ms=1351, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 20:30:33], mode=BUILD, duration=0:00:03.692, duration_ms=3692, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:06:22], mode=PLATFORM_GENERATION, duration=0:00:05.034, duration_ms=5034, data={name=DS2023}
+timestamp=[2023-08-03 21:06:45], mode=BUILD, duration=0:00:01.338, duration_ms=1338, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:06:53], mode=BUILD, duration=0:00:03.711, duration_ms=3711, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:31:52], mode=PLATFORM_GENERATION, duration=0:00:04.988, duration_ms=4988, data={name=DS2023}
+timestamp=[2023-08-03 21:32:15], mode=BUILD, duration=0:00:01.338, duration_ms=1338, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:32:23], mode=BUILD, duration=0:00:03.760, duration_ms=3760, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:38:36], mode=BUILD, duration=0:00:00.540, duration_ms=540, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:38:40], mode=BUILD, duration=0:00:03.636, duration_ms=3636, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:39:46], mode=BUILD, duration=0:00:00.544, duration_ms=544, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:39:50], mode=BUILD, duration=0:00:03.649, duration_ms=3649, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:42:12], mode=BUILD, duration=0:00:00.544, duration_ms=544, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:42:16], mode=BUILD, duration=0:00:03.656, duration_ms=3656, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:46:26], mode=BUILD, duration=0:00:00.288, duration_ms=288, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:46:39], mode=BUILD, duration=0:00:00.970, duration_ms=970, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:46:44], mode=BUILD, duration=0:00:04.027, duration_ms=4027, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:52:02], mode=BUILD, duration=0:00:01.235, duration_ms=1235, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:52:06], mode=BUILD, duration=0:00:03.887, duration_ms=3887, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:52:41], mode=BUILD, duration=0:00:00.863, duration_ms=863, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 21:52:45], mode=BUILD, duration=0:00:03.852, duration_ms=3852, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 22:00:12], mode=PLATFORM_GENERATION, duration=0:00:04.510, duration_ms=4510, data={name=DS2023}
+timestamp=[2023-08-03 22:00:35], mode=BUILD, duration=0:00:01.342, duration_ms=1342, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 22:00:43], mode=BUILD, duration=0:00:03.636, duration_ms=3636, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 22:01:47], mode=BUILD, duration=0:00:00.540, duration_ms=540, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 22:01:51], mode=BUILD, duration=0:00:03.648, duration_ms=3648, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 22:05:08], mode=BUILD, duration=0:00:00.550, duration_ms=550, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 22:05:12], mode=BUILD, duration=0:00:03.636, duration_ms=3636, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 22:22:26], mode=PLATFORM_GENERATION, duration=0:00:04.571, duration_ms=4571, data={name=DS2023}
+timestamp=[2023-08-03 22:22:49], mode=BUILD, duration=0:00:01.407, duration_ms=1407, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 22:22:57], mode=BUILD, duration=0:00:03.701, duration_ms=3701, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 23:11:52], mode=PLATFORM_GENERATION, duration=0:00:04.750, duration_ms=4750, data={name=DS2023}
+timestamp=[2023-08-03 23:12:15], mode=BUILD, duration=0:00:01.342, duration_ms=1342, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 23:12:23], mode=BUILD, duration=0:00:03.692, duration_ms=3692, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 23:55:00], mode=BUILD, duration=0:00:00.910, duration_ms=910, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 23:55:04], mode=BUILD, duration=0:00:03.651, duration_ms=3651, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 23:55:10], mode=BUILD, duration=0:00:00.539, duration_ms=539, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-03 23:55:14], mode=BUILD, duration=0:00:03.584, duration_ms=3584, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 00:14:11], mode=WORKBENCH_START, duration=0:00:06.402, duration_ms=6402, data={}
+timestamp=[2023-08-04 00:14:12], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.060, duration_ms=60, data={}
+timestamp=[2023-08-04 00:14:12], mode=WORKBENCH_UI_INIT, duration=0:00:01.072, duration_ms=1072, data={editors_count=9, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DS2023,RemoteSystemsTempFiles,pstop,pstop_system}
+timestamp=[2023-08-04 00:32:02], mode=PLATFORM_GENERATION, duration=0:00:04.888, duration_ms=4888, data={name=DS2023}
+timestamp=[2023-08-04 00:32:25], mode=BUILD, duration=0:00:01.431, duration_ms=1431, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 00:32:32], mode=BUILD, duration=0:00:03.764, duration_ms=3764, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 01:14:42], mode=WORKBENCH_START, duration=0:00:06.001, duration_ms=6001, data={}
+timestamp=[2023-08-04 01:14:42], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.021, duration_ms=21, data={}
+timestamp=[2023-08-04 01:14:42], mode=WORKBENCH_UI_INIT, duration=0:00:00.658, duration_ms=658, data={editors_count=9, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DS2023,RemoteSystemsTempFiles,pstop,pstop_system}
+timestamp=[2023-08-04 07:26:31], mode=WORKBENCH_START, duration=0:00:07.591, duration_ms=7591, data={}
+timestamp=[2023-08-04 07:26:32], mode=WORKBENCH_UI_INIT, duration=0:00:00.568, duration_ms=568, data={editors_count=9, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DS2023,RemoteSystemsTempFiles,pstop,pstop_system}
+timestamp=[2023-08-04 07:26:32], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.036, duration_ms=36, data={}
+timestamp=[2023-08-04 07:35:26], mode=PLATFORM_GENERATION, duration=0:00:35.158, duration_ms=35158, data={name=DS2023}
+timestamp=[2023-08-04 07:35:27], mode=BUILD, duration=0:00:00.668, duration_ms=668, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 07:35:31], mode=BUILD, duration=0:00:03.875, duration_ms=3875, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 07:36:40], mode=BUILD, duration=0:00:00.537, duration_ms=537, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 07:36:44], mode=BUILD, duration=0:00:03.617, duration_ms=3617, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 07:38:16], mode=BUILD, duration=0:00:00.550, duration_ms=550, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 07:38:20], mode=BUILD, duration=0:00:03.627, duration_ms=3627, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 07:43:52], mode=BUILD, duration=0:00:00.559, duration_ms=559, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 07:43:56], mode=BUILD, duration=0:00:03.623, duration_ms=3623, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 07:57:54], mode=BUILD, duration=0:00:01.369, duration_ms=1369, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 07:57:58], mode=BUILD, duration=0:00:03.982, duration_ms=3982, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 08:13:46], mode=PLATFORM_GENERATION, duration=0:00:04.576, duration_ms=4576, data={name=DS2023}
+timestamp=[2023-08-04 08:14:09], mode=BUILD, duration=0:00:01.221, duration_ms=1221, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 08:14:17], mode=BUILD, duration=0:00:03.595, duration_ms=3595, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 08:58:36], mode=PLATFORM_GENERATION, duration=0:00:04.895, duration_ms=4895, data={name=DS2023}
+timestamp=[2023-08-04 08:58:59], mode=BUILD, duration=0:00:01.343, duration_ms=1343, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 08:59:07], mode=BUILD, duration=0:00:03.734, duration_ms=3734, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 10:28:03], mode=PLATFORM_GENERATION, duration=0:00:07.564, duration_ms=7564, data={name=DS2023}
+timestamp=[2023-08-04 10:28:27], mode=BUILD, duration=0:00:01.596, duration_ms=1596, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 10:28:36], mode=BUILD, duration=0:00:03.953, duration_ms=3953, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 12:01:53], mode=PLATFORM_GENERATION, duration=0:00:05.155, duration_ms=5155, data={name=DS2023}
+timestamp=[2023-08-04 12:02:17], mode=BUILD, duration=0:00:01.342, duration_ms=1342, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 12:02:25], mode=BUILD, duration=0:00:03.769, duration_ms=3769, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 12:42:47], mode=PLATFORM_GENERATION, duration=0:00:05.066, duration_ms=5066, data={name=DS2023}
+timestamp=[2023-08-04 12:43:10], mode=BUILD, duration=0:00:01.333, duration_ms=1333, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 12:43:18], mode=BUILD, duration=0:00:03.760, duration_ms=3760, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 13:16:21], mode=PLATFORM_GENERATION, duration=0:00:05.001, duration_ms=5001, data={name=DS2023}
+timestamp=[2023-08-04 13:16:45], mode=BUILD, duration=0:00:01.403, duration_ms=1403, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 13:16:53], mode=BUILD, duration=0:00:03.754, duration_ms=3754, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 13:25:41], mode=BUILD, duration=0:00:00.591, duration_ms=591, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 13:25:45], mode=BUILD, duration=0:00:03.701, duration_ms=3701, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 13:26:16], mode=BUILD, duration=0:00:00.550, duration_ms=550, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 13:26:20], mode=BUILD, duration=0:00:03.644, duration_ms=3644, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 13:29:53], mode=BUILD, duration=0:00:00.539, duration_ms=539, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 13:29:57], mode=BUILD, duration=0:00:03.641, duration_ms=3641, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 13:32:32], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 13:32:36], mode=BUILD, duration=0:00:03.772, duration_ms=3772, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 14:12:15], mode=PLATFORM_GENERATION, duration=0:00:04.874, duration_ms=4874, data={name=DS2023}
+timestamp=[2023-08-04 14:12:39], mode=BUILD, duration=0:00:01.398, duration_ms=1398, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 14:12:47], mode=BUILD, duration=0:00:03.824, duration_ms=3824, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 14:16:44], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 14:16:48], mode=BUILD, duration=0:00:03.841, duration_ms=3841, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 14:20:26], mode=BUILD, duration=0:00:00.611, duration_ms=611, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 14:20:30], mode=BUILD, duration=0:00:03.774, duration_ms=3774, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 14:45:53], mode=BUILD, duration=0:00:01.505, duration_ms=1505, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 14:45:59], mode=BUILD, duration=0:00:06.286, duration_ms=6286, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 15:27:22], mode=PLATFORM_GENERATION, duration=0:00:05.531, duration_ms=5531, data={name=DS2023}
+timestamp=[2023-08-04 15:27:46], mode=BUILD, duration=0:00:01.471, duration_ms=1471, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 15:27:55], mode=BUILD, duration=0:00:03.751, duration_ms=3751, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 15:49:13], mode=PLATFORM_GENERATION, duration=0:00:05.237, duration_ms=5237, data={name=DS2023}
+timestamp=[2023-08-04 15:49:36], mode=BUILD, duration=0:00:01.412, duration_ms=1412, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 15:49:45], mode=BUILD, duration=0:00:03.824, duration_ms=3824, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 15:57:49], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 15:57:53], mode=BUILD, duration=0:00:03.816, duration_ms=3816, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:00:18], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:00:22], mode=BUILD, duration=0:00:03.809, duration_ms=3809, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:02:48], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:02:52], mode=BUILD, duration=0:00:03.749, duration_ms=3749, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:03:03], mode=BUILD, duration=0:00:00.590, duration_ms=590, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:03:07], mode=BUILD, duration=0:00:03.746, duration_ms=3746, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:06:43], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:06:47], mode=BUILD, duration=0:00:03.819, duration_ms=3819, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:07:31], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:07:35], mode=BUILD, duration=0:00:03.769, duration_ms=3769, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:10:02], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:10:06], mode=BUILD, duration=0:00:03.759, duration_ms=3759, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:16:00], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:16:04], mode=BUILD, duration=0:00:03.758, duration_ms=3758, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:18:16], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:18:20], mode=BUILD, duration=0:00:03.847, duration_ms=3847, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:18:55], mode=BUILD, duration=0:00:00.927, duration_ms=927, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:18:59], mode=BUILD, duration=0:00:03.786, duration_ms=3786, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:31:03], mode=BUILD, duration=0:00:00.617, duration_ms=617, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:31:07], mode=BUILD, duration=0:00:03.835, duration_ms=3835, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:35:20], mode=BUILD, duration=0:00:00.600, duration_ms=600, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:35:24], mode=BUILD, duration=0:00:03.773, duration_ms=3773, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:58:38], mode=BUILD, duration=0:00:00.540, duration_ms=540, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:59:39], mode=BUILD, duration=0:00:00.300, duration_ms=300, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 16:59:58], mode=BUILD, duration=0:00:00.603, duration_ms=603, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 17:00:02], mode=BUILD, duration=0:00:03.819, duration_ms=3819, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 17:08:35], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 17:08:39], mode=BUILD, duration=0:00:03.780, duration_ms=3780, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 17:15:25], mode=WORKBENCH_START, duration=0:00:05.651, duration_ms=5651, data={}
+timestamp=[2023-08-04 17:15:26], mode=WORKBENCH_UI_INIT, duration=0:00:00.704, duration_ms=704, data={editors_count=9, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DS2023,RemoteSystemsTempFiles,pstop,pstop_system}
+timestamp=[2023-08-04 17:15:26], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.025, duration_ms=25, data={}
+timestamp=[2023-08-04 19:16:49], mode=BUILD, duration=0:00:02.467, duration_ms=2467, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:16:54], mode=BUILD, duration=0:00:04.268, duration_ms=4268, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:24:54], mode=BUILD, duration=0:00:00.668, duration_ms=668, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:24:58], mode=BUILD, duration=0:00:03.829, duration_ms=3829, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:31:48], mode=BUILD, duration=0:00:00.282, duration_ms=282, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:32:02], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:32:06], mode=BUILD, duration=0:00:03.709, duration_ms=3709, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:39:11], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:39:15], mode=BUILD, duration=0:00:03.752, duration_ms=3752, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:39:33], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:39:37], mode=BUILD, duration=0:00:03.758, duration_ms=3758, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:45:50], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:45:54], mode=BUILD, duration=0:00:03.783, duration_ms=3783, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:50:04], mode=PLATFORM_GENERATION, duration=0:00:04.785, duration_ms=4785, data={name=DS2023}
+timestamp=[2023-08-04 19:50:31], mode=BUILD, duration=0:00:01.281, duration_ms=1281, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:50:39], mode=BUILD, duration=0:00:03.695, duration_ms=3695, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:52:22], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:52:26], mode=BUILD, duration=0:00:03.860, duration_ms=3860, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:53:50], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 19:53:54], mode=BUILD, duration=0:00:03.576, duration_ms=3576, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 20:20:02], mode=PLATFORM_GENERATION, duration=0:00:05.067, duration_ms=5067, data={name=DS2023}
+timestamp=[2023-08-04 20:20:29], mode=BUILD, duration=0:00:01.507, duration_ms=1507, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 20:20:38], mode=BUILD, duration=0:00:03.941, duration_ms=3941, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 20:31:03], mode=BUILD, duration=0:00:00.605, duration_ms=605, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 20:31:07], mode=BUILD, duration=0:00:03.754, duration_ms=3754, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 20:37:58], mode=BUILD, duration=0:00:00.599, duration_ms=599, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 20:38:02], mode=BUILD, duration=0:00:03.759, duration_ms=3759, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 20:41:46], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 20:41:50], mode=BUILD, duration=0:00:03.778, duration_ms=3778, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 21:28:27], mode=BUILD, duration=0:00:00.670, duration_ms=670, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 21:28:31], mode=BUILD, duration=0:00:03.763, duration_ms=3763, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 21:29:27], mode=BUILD, duration=0:00:00.626, duration_ms=626, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 21:29:31], mode=BUILD, duration=0:00:03.766, duration_ms=3766, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 21:30:25], mode=BUILD, duration=0:00:00.614, duration_ms=614, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 21:30:29], mode=BUILD, duration=0:00:03.759, duration_ms=3759, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 22:41:00], mode=PLATFORM_GENERATION, duration=0:00:05.074, duration_ms=5074, data={name=DS2023}
+timestamp=[2023-08-04 22:41:27], mode=BUILD, duration=0:00:01.422, duration_ms=1422, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-04 22:41:34], mode=BUILD, duration=0:00:03.773, duration_ms=3773, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 00:14:46], mode=PLATFORM_GENERATION, duration=0:00:07.580, duration_ms=7580, data={name=DS2023}
+timestamp=[2023-08-05 00:15:13], mode=BUILD, duration=0:00:01.602, duration_ms=1602, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 00:15:22], mode=BUILD, duration=0:00:03.963, duration_ms=3963, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 00:22:44], mode=BUILD, duration=0:00:00.615, duration_ms=615, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 00:22:48], mode=BUILD, duration=0:00:03.830, duration_ms=3830, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 01:32:28], mode=PLATFORM_GENERATION, duration=0:00:05.203, duration_ms=5203, data={name=DS2023}
+timestamp=[2023-08-05 01:33:02], mode=BUILD, duration=0:00:01.484, duration_ms=1484, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 01:33:10], mode=BUILD, duration=0:00:03.896, duration_ms=3896, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 01:41:23], mode=BUILD, duration=0:00:00.674, duration_ms=674, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 01:41:27], mode=BUILD, duration=0:00:04.307, duration_ms=4307, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 02:23:27], mode=PLATFORM_GENERATION, duration=0:00:06.370, duration_ms=6370, data={name=DS2023}
+timestamp=[2023-08-05 02:24:01], mode=BUILD, duration=0:00:02.177, duration_ms=2177, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 02:24:09], mode=BUILD, duration=0:00:04.133, duration_ms=4133, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 02:28:47], mode=BUILD, duration=0:00:01.580, duration_ms=1580, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 02:28:53], mode=BUILD, duration=0:00:05.745, duration_ms=5745, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 02:37:09], mode=BUILD, duration=0:00:01.251, duration_ms=1251, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 02:37:13], mode=BUILD, duration=0:00:04.296, duration_ms=4296, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:04:36], mode=PLATFORM_GENERATION, duration=0:00:05.380, duration_ms=5380, data={name=DS2023}
+timestamp=[2023-08-05 03:05:04], mode=BUILD, duration=0:00:01.472, duration_ms=1472, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:05:13], mode=BUILD, duration=0:00:03.878, duration_ms=3878, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:09:34], mode=BUILD, duration=0:00:00.611, duration_ms=611, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:09:38], mode=BUILD, duration=0:00:03.785, duration_ms=3785, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:12:13], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:12:17], mode=BUILD, duration=0:00:03.763, duration_ms=3763, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:13:28], mode=BUILD, duration=0:00:00.606, duration_ms=606, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:13:32], mode=BUILD, duration=0:00:03.767, duration_ms=3767, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:17:42], mode=BUILD, duration=0:00:00.674, duration_ms=674, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:17:46], mode=BUILD, duration=0:00:03.776, duration_ms=3776, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:19:17], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:19:21], mode=BUILD, duration=0:00:03.815, duration_ms=3815, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:19:50], mode=BUILD, duration=0:00:00.607, duration_ms=607, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:19:54], mode=BUILD, duration=0:00:03.763, duration_ms=3763, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:23:52], mode=BUILD, duration=0:00:00.604, duration_ms=604, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:23:56], mode=BUILD, duration=0:00:03.778, duration_ms=3778, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:25:05], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:25:09], mode=BUILD, duration=0:00:03.772, duration_ms=3772, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:27:40], mode=BUILD, duration=0:00:00.615, duration_ms=615, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:27:44], mode=BUILD, duration=0:00:03.773, duration_ms=3773, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 03:33:38], mode=WORKBENCH_START, duration=0:00:05.260, duration_ms=5260, data={}
+timestamp=[2023-08-05 03:33:39], mode=WORKBENCH_UI_INIT, duration=0:00:00.672, duration_ms=672, data={editors_count=9, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DS2023,RemoteSystemsTempFiles,pstop,pstop_system}
+timestamp=[2023-08-05 03:33:39], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.022, duration_ms=22, data={}
+timestamp=[2023-08-05 06:36:54], mode=WORKBENCH_START, duration=0:00:05.461, duration_ms=5461, data={}
+timestamp=[2023-08-05 06:36:54], mode=WORKBENCH_UI_INIT, duration=0:00:00.599, duration_ms=599, data={editors_count=9, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DS2023,RemoteSystemsTempFiles,pstop,pstop_system}
+timestamp=[2023-08-05 06:36:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.034, duration_ms=34, data={}
+timestamp=[2023-08-05 07:04:04], mode=PLATFORM_GENERATION, duration=0:00:39.283, duration_ms=39283, data={name=DS2023}
+timestamp=[2023-08-05 07:04:31], mode=BUILD, duration=0:00:01.508, duration_ms=1508, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:04:35], mode=BUILD, duration=0:00:03.885, duration_ms=3885, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:09:53], mode=BUILD, duration=0:00:01.392, duration_ms=1392, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:09:58], mode=BUILD, duration=0:00:03.870, duration_ms=3870, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:16:09], mode=BUILD, duration=0:00:00.605, duration_ms=605, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:16:13], mode=BUILD, duration=0:00:03.613, duration_ms=3613, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:17:56], mode=BUILD, duration=0:00:00.607, duration_ms=607, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:18:00], mode=BUILD, duration=0:00:03.697, duration_ms=3697, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:18:55], mode=BUILD, duration=0:00:00.611, duration_ms=611, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:18:59], mode=BUILD, duration=0:00:03.823, duration_ms=3823, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:28:59], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:29:03], mode=BUILD, duration=0:00:03.678, duration_ms=3678, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:29:44], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:29:48], mode=BUILD, duration=0:00:03.733, duration_ms=3733, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:37:39], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:37:43], mode=BUILD, duration=0:00:03.677, duration_ms=3677, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:46:35], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:46:39], mode=BUILD, duration=0:00:03.681, duration_ms=3681, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:49:28], mode=BUILD, duration=0:00:00.551, duration_ms=551, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:50:07], mode=BUILD, duration=0:00:00.306, duration_ms=306, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:50:18], mode=BUILD, duration=0:00:00.294, duration_ms=294, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:50:37], mode=BUILD, duration=0:00:00.605, duration_ms=605, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:50:41], mode=BUILD, duration=0:00:03.737, duration_ms=3737, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:57:20], mode=BUILD, duration=0:00:00.606, duration_ms=606, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:57:24], mode=BUILD, duration=0:00:03.680, duration_ms=3680, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:58:14], mode=BUILD, duration=0:00:00.600, duration_ms=600, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 07:58:17], mode=BUILD, duration=0:00:03.684, duration_ms=3684, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:05:06], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:05:10], mode=BUILD, duration=0:00:03.743, duration_ms=3743, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:11:06], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:11:10], mode=BUILD, duration=0:00:03.700, duration_ms=3700, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:16:15], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:16:19], mode=BUILD, duration=0:00:03.679, duration_ms=3679, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:21:15], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:21:19], mode=BUILD, duration=0:00:03.740, duration_ms=3740, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:25:23], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:25:27], mode=BUILD, duration=0:00:03.735, duration_ms=3735, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:29:17], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:29:21], mode=BUILD, duration=0:00:03.676, duration_ms=3676, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:32:47], mode=BUILD, duration=0:00:00.607, duration_ms=607, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:32:51], mode=BUILD, duration=0:00:03.754, duration_ms=3754, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:35:36], mode=BUILD, duration=0:00:00.614, duration_ms=614, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:35:39], mode=BUILD, duration=0:00:03.689, duration_ms=3689, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:46:29], mode=PLATFORM_GENERATION, duration=0:00:04.410, duration_ms=4410, data={name=DS2023}
+timestamp=[2023-08-05 08:46:58], mode=BUILD, duration=0:00:01.295, duration_ms=1295, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 08:47:06], mode=BUILD, duration=0:00:03.619, duration_ms=3619, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 09:32:09], mode=PLATFORM_GENERATION, duration=0:00:04.726, duration_ms=4726, data={name=DS2023}
+timestamp=[2023-08-05 09:32:38], mode=BUILD, duration=0:00:01.403, duration_ms=1403, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 09:32:46], mode=BUILD, duration=0:00:03.731, duration_ms=3731, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 09:54:50], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 09:54:54], mode=BUILD, duration=0:00:03.642, duration_ms=3642, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 09:57:48], mode=BUILD, duration=0:00:00.543, duration_ms=543, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 09:57:52], mode=BUILD, duration=0:00:03.566, duration_ms=3566, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 09:58:35], mode=BUILD, duration=0:00:00.544, duration_ms=544, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 09:58:38], mode=BUILD, duration=0:00:03.611, duration_ms=3611, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:04:55], mode=BUILD, duration=0:00:00.531, duration_ms=531, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:04:59], mode=BUILD, duration=0:00:03.731, duration_ms=3731, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:19:03], mode=BUILD, duration=0:00:00.230, duration_ms=230, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:19:07], mode=BUILD, duration=0:00:03.748, duration_ms=3748, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:23:16], mode=BUILD, duration=0:00:00.799, duration_ms=799, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:23:20], mode=BUILD, duration=0:00:03.735, duration_ms=3735, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:24:55], mode=BUILD, duration=0:00:00.600, duration_ms=600, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:24:59], mode=BUILD, duration=0:00:03.745, duration_ms=3745, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:28:12], mode=BUILD, duration=0:00:00.538, duration_ms=538, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:28:16], mode=BUILD, duration=0:00:03.620, duration_ms=3620, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:28:56], mode=BUILD, duration=0:00:00.548, duration_ms=548, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:29:00], mode=BUILD, duration=0:00:03.748, duration_ms=3748, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:30:48], mode=BUILD, duration=0:00:00.615, duration_ms=615, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:30:52], mode=BUILD, duration=0:00:03.745, duration_ms=3745, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:36:24], mode=BUILD, duration=0:00:00.288, duration_ms=288, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:37:13], mode=BUILD, duration=0:00:00.296, duration_ms=296, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:37:16], mode=BUILD, duration=0:00:00.283, duration_ms=283, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:37:56], mode=BUILD, duration=0:00:00.600, duration_ms=600, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:38:00], mode=BUILD, duration=0:00:03.728, duration_ms=3728, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:39:00], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:39:04], mode=BUILD, duration=0:00:03.756, duration_ms=3756, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:41:13], mode=BUILD, duration=0:00:00.615, duration_ms=615, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:41:17], mode=BUILD, duration=0:00:03.666, duration_ms=3666, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:42:15], mode=BUILD, duration=0:00:00.604, duration_ms=604, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:42:18], mode=BUILD, duration=0:00:03.617, duration_ms=3617, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:43:13], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:43:17], mode=BUILD, duration=0:00:03.759, duration_ms=3759, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:44:24], mode=BUILD, duration=0:00:00.600, duration_ms=600, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:44:28], mode=BUILD, duration=0:00:03.620, duration_ms=3620, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:45:13], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:45:17], mode=BUILD, duration=0:00:03.674, duration_ms=3674, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:46:48], mode=BUILD, duration=0:00:00.606, duration_ms=606, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:46:51], mode=BUILD, duration=0:00:03.686, duration_ms=3686, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:50:52], mode=BUILD, duration=0:00:00.919, duration_ms=919, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:50:56], mode=BUILD, duration=0:00:03.679, duration_ms=3679, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:55:37], mode=BUILD, duration=0:00:00.544, duration_ms=544, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:55:43], mode=BUILD, duration=0:00:00.300, duration_ms=300, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:55:54], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:55:58], mode=BUILD, duration=0:00:03.618, duration_ms=3618, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:58:55], mode=BUILD, duration=0:00:00.609, duration_ms=609, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:58:59], mode=BUILD, duration=0:00:03.745, duration_ms=3745, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:59:56], mode=BUILD, duration=0:00:00.605, duration_ms=605, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 10:59:59], mode=BUILD, duration=0:00:03.686, duration_ms=3686, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:01:14], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:01:18], mode=BUILD, duration=0:00:03.673, duration_ms=3673, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:04:54], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:04:58], mode=BUILD, duration=0:00:03.669, duration_ms=3669, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:12:44], mode=BUILD, duration=0:00:00.283, duration_ms=283, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:13:09], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:13:13], mode=BUILD, duration=0:00:03.694, duration_ms=3694, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:15:27], mode=BUILD, duration=0:00:00.604, duration_ms=604, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:15:30], mode=BUILD, duration=0:00:03.687, duration_ms=3687, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:18:35], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:18:39], mode=BUILD, duration=0:00:03.671, duration_ms=3671, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:20:32], mode=BUILD, duration=0:00:00.663, duration_ms=663, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:20:36], mode=BUILD, duration=0:00:03.683, duration_ms=3683, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:36:38], mode=BUILD, duration=0:00:01.727, duration_ms=1727, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:36:45], mode=BUILD, duration=0:00:06.062, duration_ms=6062, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:40:14], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:40:18], mode=BUILD, duration=0:00:03.689, duration_ms=3689, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:48:18], mode=BUILD, duration=0:00:00.626, duration_ms=626, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 11:48:21], mode=BUILD, duration=0:00:03.546, duration_ms=3546, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:33:13], mode=BUILD, duration=0:00:01.178, duration_ms=1178, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:33:17], mode=BUILD, duration=0:00:03.936, duration_ms=3936, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:36:12], mode=BUILD, duration=0:00:00.614, duration_ms=614, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:36:16], mode=BUILD, duration=0:00:03.699, duration_ms=3699, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:37:54], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:37:57], mode=BUILD, duration=0:00:03.556, duration_ms=3556, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:38:48], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:38:52], mode=BUILD, duration=0:00:03.646, duration_ms=3646, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:41:53], mode=BUILD, duration=0:00:00.664, duration_ms=664, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:41:57], mode=BUILD, duration=0:00:03.673, duration_ms=3673, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:43:25], mode=BUILD, duration=0:00:00.614, duration_ms=614, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:43:29], mode=BUILD, duration=0:00:03.733, duration_ms=3733, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:46:13], mode=BUILD, duration=0:00:00.605, duration_ms=605, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:46:17], mode=BUILD, duration=0:00:03.674, duration_ms=3674, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:46:38], mode=BUILD, duration=0:00:00.618, duration_ms=618, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:46:42], mode=BUILD, duration=0:00:03.823, duration_ms=3823, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:47:31], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 13:47:35], mode=BUILD, duration=0:00:03.697, duration_ms=3697, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 14:29:05], mode=BUILD, duration=0:00:00.666, duration_ms=666, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 14:29:09], mode=BUILD, duration=0:00:03.939, duration_ms=3939, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 14:37:36], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 14:37:40], mode=BUILD, duration=0:00:03.813, duration_ms=3813, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 15:44:32], mode=BUILD, duration=0:00:01.556, duration_ms=1556, data={name=pstop, configuration=Release, clean_build=false}
+timestamp=[2023-08-05 15:44:38], mode=BUILD, duration=0:00:05.812, duration_ms=5812, data={name=pstop_system, configuration=Release, clean_build=false}
+timestamp=[2023-08-28 00:54:49], mode=WORKBENCH_START, duration=0:00:09.072, duration_ms=9072, data={}
+timestamp=[2023-08-28 00:54:50], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.110, duration_ms=110, data={}
+timestamp=[2023-08-28 00:54:50], mode=WORKBENCH_UI_INIT, duration=0:00:01.147, duration_ms=1147, data={editors_count=9, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=DS2023,RemoteSystemsTempFiles,pstop,pstop_system}

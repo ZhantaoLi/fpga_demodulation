@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar  6 11:10:10 2025
+# Process ID: 10256
+# Current directory: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7812 D:\study_learning\2023_D\2023D_V2\Vivado\Demodulate\Demodulate\Demodulate.xpr
+# Log file: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate/vivado.log
+# Journal file: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate/Demodulate.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/study_learning/2023_D/2019_G/Vivado/FM_audio_demodulate/src/two_channel_dac.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'ila_0' is locked:
+* IP definition 'ILA (Integrated Logic Analyzer) (6.2)' for IP 'ila_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'ila_1' is locked:
+* IP definition 'ILA (Integrated Logic Analyzer) (6.2)' for IP 'ila_1' (customized with software release 2019.2) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 1091.207 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 11:14:40 2025...

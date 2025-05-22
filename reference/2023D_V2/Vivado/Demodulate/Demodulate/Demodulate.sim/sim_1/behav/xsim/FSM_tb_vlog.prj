@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Demodulate.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../Demodulate.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" \
+"../../../../Demodulate.srcs/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../Demodulate.srcs/sources_1/ip/dist_mem_gen_I/sim/dist_mem_gen_I.v" \
+"../../../../Demodulate.srcs/sources_1/ip/mult_gen_0/mult_gen_0_sim_netlist.v" \
+"../../../../Demodulate.srcs/sources_1/ip/dist_mem_ph/sim/dist_mem_ph.v" \
+"../../../../../src/two_channel_ADC.v" \
+"../../../../../src/filter/CIC_decimation_10_fs6MHz.v" \
+"../../../../Demodulate.srcs/sources_1/ip/dist_mem_gen_Q/sim/dist_mem_gen_Q.v" \
+"../../../../Demodulate.srcs/sources_1/new/TOP_new.v" \
+"../../../../../src/filter/CIC_decimation_20_fs36MHz.v" \
+"../../../../../../../../2019_G/Vivado/FM_audio_demodulate/src/two_channel_dac.v" \
+"../../../../../src/cal/Phase_dev_cal.v" \
+"../../../../../src/demod/Demodulate.v" \
+"../../../../../src/demod/Cordic.v" \
+"../../../../../src/demod/IQ_generate.v" \
+"../../../../../src/filter/LPF_60k_fs1_8MHz.v" \
+"../../../../../src/filter/LPF_20kHz_fs1_8MHz.v" \
+"../../../../../src/TOP_FSM.v" \
+"../../../../../src/cal/Max_Min.v" \
+"../../../../../src/cal/Get_Ma.v" \
+"../../../../../src/cal/FSM_Max_Min.v" \
+"../../../../../src/Judge_and_calculate.v" \
+"../../../../../testbench/TOP_tb.v" \
+"../../../../../testbench/phase_dev_tb.v" \
+"../../../../../testbench/FSM_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

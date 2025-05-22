@@ -1,0 +1,160 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"5.0",
+   "Default View_TopLeft":"4684,1760",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 10 -x 4860 -y 1080 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 10 -x 4860 -y 1100 -defaultsOSRD
+preplace port port-id_UART0_TX_0 -pg 1 -lvl 10 -x 4860 -y 1120 -defaultsOSRD
+preplace port port-id_UART0_RX_0 -pg 1 -lvl 0 -x -40 -y 1280 -defaultsOSRD
+preplace port port-id_DAC_SCLK_0 -pg 1 -lvl 10 -x 4860 -y 860 -defaultsOSRD
+preplace port port-id_DAC_SDIO_0 -pg 1 -lvl 10 -x 4860 -y 880 -defaultsOSRD
+preplace port port-id_DAC_CS_0 -pg 1 -lvl 10 -x 4860 -y 900 -defaultsOSRD
+preplace port port-id_DAC_SCLK_1 -pg 1 -lvl 10 -x 4860 -y 990 -defaultsOSRD
+preplace port port-id_DAC_SDIO_1 -pg 1 -lvl 10 -x 4860 -y 1010 -defaultsOSRD
+preplace port port-id_DAC_CS_1 -pg 1 -lvl 10 -x 4860 -y 1030 -defaultsOSRD
+preplace port port-id_ADC_CLK_0 -pg 1 -lvl 10 -x 4860 -y 740 -defaultsOSRD
+preplace port port-id_cs_0 -pg 1 -lvl 10 -x 4860 -y 1920 -defaultsOSRD
+preplace port port-id_sdio_0 -pg 1 -lvl 10 -x 4860 -y 1900 -defaultsOSRD
+preplace port port-id_sclk_0 -pg 1 -lvl 10 -x 4860 -y 1880 -defaultsOSRD
+preplace portBus ADC_IN_0 -pg 1 -lvl 0 -x -40 -y 1010 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 200 -y 1150 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1210 -y 900 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 620 -y 690 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 620 -y 1240 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 1210 -y 1110 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 3 -x 1210 -y 760 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 4 -x 1620 -y 820 -defaultsOSRD
+preplace inst system_ila_FM -pg 1 -lvl 8 -x 3810 -y 170 -defaultsOSRD
+preplace inst D_trig_0 -pg 1 -lvl 2 -x 620 -y 1020 -defaultsOSRD
+preplace inst D_trig_1 -pg 1 -lvl 4 -x 1620 -y 550 -defaultsOSRD
+preplace inst system_ila_AM -pg 1 -lvl 9 -x 4678 -y 560 -defaultsOSRD
+preplace inst DAC_1 -pg 1 -lvl 9 -x 4678 -y 880 -defaultsOSRD
+preplace inst DAC_2 -pg 1 -lvl 9 -x 4678 -y 1010 -defaultsOSRD
+preplace inst system_ila_VPP -pg 1 -lvl 9 -x 4678 -y 1210 -defaultsOSRD
+preplace inst MOV_VPP_TOP_AM -pg 1 -lvl 8 -x 3810 -y 1640 -defaultsOSRD
+preplace inst MOV_VPP_TOP_FM -pg 1 -lvl 4 -x 1620 -y 990 -defaultsOSRD
+preplace inst D_trig_2 -pg 1 -lvl 4 -x 1620 -y 700 -defaultsOSRD
+preplace inst system_ila_VPP1 -pg 1 -lvl 8 -x 3810 -y 770 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 3 -x 1210 -y 1250 -defaultsOSRD
+preplace inst system_ila_FREQ -pg 1 -lvl 9 -x 4678 -y 1410 -defaultsOSRD
+preplace inst FREQ_counter_FM -pg 1 -lvl 8 -x 3810 -y 1230 -defaultsOSRD
+preplace inst FREQ_counter_AM -pg 1 -lvl 8 -x 3810 -y 1430 -defaultsOSRD
+preplace inst clock_1M_0 -pg 1 -lvl 6 -x 2440 -y 1190 -defaultsOSRD
+preplace inst LTC2248_0 -pg 1 -lvl 9 -x 4678 -y 740 -defaultsOSRD
+preplace inst axi_gpio_4 -pg 1 -lvl 3 -x 1210 -y 460 -defaultsOSRD
+preplace inst axi_gpio_5 -pg 1 -lvl 3 -x 1210 -y 320 -defaultsOSRD
+preplace inst axi_gpio_6 -pg 1 -lvl 3 -x 1210 -y 600 -defaultsOSRD
+preplace inst FREQ_counter_PSK -pg 1 -lvl 7 -x 3370 -y 1680 -defaultsOSRD
+preplace inst axi_gpio_7 -pg 1 -lvl 3 -x 1210 -y 1390 -defaultsOSRD
+preplace inst PSK_OUT_0 -pg 1 -lvl 6 -x 2440 -y 1450 -defaultsOSRD
+preplace inst axi_gpio_8 -pg 1 -lvl 3 -x 1210 -y 1530 -defaultsOSRD
+preplace inst DATA_SELE_0 -pg 1 -lvl 5 -x 1990 -y 1800 -defaultsOSRD
+preplace inst system_ila_SELE -pg 1 -lvl 6 -x 2440 -y 1760 -defaultsOSRD
+preplace inst AM_DM_0 -pg 1 -lvl 6 -x 2440 -y 610 -defaultsOSRD
+preplace inst MOV_RMS_AM -pg 1 -lvl 9 -x 4678 -y 380 -defaultsOSRD
+preplace inst MOV_RMS_FM -pg 1 -lvl 8 -x 3810 -y 420 -defaultsOSRD
+preplace inst MOV_RMS_PSK -pg 1 -lvl 8 -x 3810 -y 940 -defaultsOSRD
+preplace inst FM_DM_0 -pg 1 -lvl 3 -x 1210 -y 100 -defaultsOSRD
+preplace inst PSK_DM_0 -pg 1 -lvl 6 -x 2440 -y 860 -defaultsOSRD
+preplace inst DAC_3 -pg 1 -lvl 6 -x 2440 -y 2000 -defaultsOSRD
+preplace inst system_ila_DAC -pg 1 -lvl 6 -x 2440 -y 2280 -defaultsOSRD
+preplace inst DAC_3|AD5664_spi_0 -pg 1 -lvl 2 -x 2800 -y 2060 -defaultsOSRD
+preplace inst DAC_3|AD5664_WR_0 -pg 1 -lvl 1 -x 2530 -y 2080 -defaultsOSRD
+preplace netloc AD9434_0_adc_data 1 1 9 440 -60 NJ -60 1440 440 NJ 440 N 440 NJ 440 3550 510 3970J 280 4840
+preplace netloc ADC_IN_0_1 1 0 9 -20J -70 NJ -70 NJ -70 NJ -70 NJ -70 N -70 NJ -70 3650 0 4070J
+preplace netloc AM_DM_0_AM_base 1 4 5 1810 450 N 450 3040 540 3590J 540 4020J
+preplace netloc AM_DM_0_AM_base_DC 1 6 3 N 550 N 550 NJ
+preplace netloc AM_DM_0_DS_buf_1 1 6 3 N 590 N 590 NJ
+preplace netloc AM_DM_0_DS_buf_5 1 6 3 3040 610 N 610 NJ
+preplace netloc AM_DM_0_down_clk 1 6 3 N 570 NJ 570 4040J
+preplace netloc DAC_1_cs_1 1 9 1 NJ 900
+preplace netloc DAC_1_sclk_1 1 9 1 NJ 860
+preplace netloc DAC_1_sdio_0 1 9 1 NJ 880
+preplace netloc DAC_2_cs_1 1 9 1 NJ 1030
+preplace netloc DAC_2_sclk_1 1 9 1 NJ 990
+preplace netloc DAC_2_sdio_0 1 9 1 NJ 1010
+preplace netloc DATA_SELE_0_DAC_data 1 5 4 2180 770 3050J 630 NJ 630 4060J
+preplace netloc D_trig_0_outdata 1 2 1 810 120n
+preplace netloc D_trig_1_outdata 1 4 2 N 550 2180
+preplace netloc D_trig_2_outdata 1 4 2 N 700 2140
+preplace netloc FM_DM_0_AC_MIX_data 1 3 5 N 40 NJ 40 N 40 NJ 40 3640
+preplace netloc FM_DM_0_DS_buf_1 1 3 5 N 100 NJ 100 N 100 NJ 100 3630
+preplace netloc FM_DM_0_DS_buf_2 1 3 5 N 120 NJ 120 N 120 NJ 120 3540
+preplace netloc FM_DM_0_DS_buf_3 1 3 5 N 140 NJ 140 N 140 NJ 140 3620
+preplace netloc FM_DM_0_DS_buf_4 1 3 5 N 160 NJ 160 N 160 NJ 160 3530
+preplace netloc FM_DM_0_DS_buf_5 1 3 5 N 180 NJ 180 N 180 NJ 180 3590
+preplace netloc FM_DM_0_DS_buf_6 1 3 5 N 200 NJ 200 N 200 NJ 200 3520
+preplace netloc FM_DM_0_FM_base 1 3 6 1430 1100 1780J 1070 N 1070 N 1070 3560 1030 NJ
+preplace netloc FM_DM_0_FM_base_DC 1 3 5 N 20 NJ 20 N 20 NJ 20 3650
+preplace netloc FM_DM_0_down_clk 1 3 5 NJ 80 NJ 80 NJ 80 NJ 80 3550
+preplace netloc FM_DM_0_mixdata4 1 3 5 N 60 NJ 60 N 60 NJ 60 3590
+preplace netloc FREQ_counter_0_FTW 1 3 6 1420 630 NJ 630 2160 750 NJ 750 3600 640 4010
+preplace netloc FREQ_counter_AM_FTW 1 3 6 1450 1140 1790J 1100 N 1100 NJ 1100 N 1100 3960
+preplace netloc FREQ_counter_FM1_FTW 1 3 6 1410 1370 N 1370 N 1370 N 1370 3540 1550 4010J
+preplace netloc FREQ_counter_FM_EN_2 1 8 1 3990 1240n
+preplace netloc FREQ_counter_FM_SQ_data 1 8 1 3980 1220n
+preplace netloc LTC2248_0_ADC_CLK 1 9 1 NJ 740
+preplace netloc MOV_RMS_AM_RMS 1 3 7 NJ 330 NJ 330 N 330 NJ 330 3590 520 4010J 290 4830
+preplace netloc MOV_RMS_FM_RMS 1 3 6 NJ 470 NJ 470 2150 460 NJ 460 3540 530 3960
+preplace netloc MOV_RMS_PSK_RMS 1 3 6 1420J 480 NJ 480 2160 470 NJ 470 3520 600 3960
+preplace netloc MOV_VPP_TOP_AM_VPP_data 1 3 6 N 1120 NJ 1120 2160 1110 NJ 1110 N 1110 3970
+preplace netloc MOV_VPP_TOP_FM_VPP_data 1 3 6 1440 890 1780 760 N 760 NJ 760 3630 660 4040
+preplace netloc MOV_VPP_TOP_FM_clk1k 1 0 6 0 1020 410J 1110 800J 1010 1380J 1110 1770 1110 2140
+preplace netloc MOV_VPP_TOP_FM_data_max 1 4 5 NJ 980 N 980 NJ 980 3580 1040 4020
+preplace netloc MOV_VPP_TOP_FM_data_min 1 4 5 N 1000 N 1000 NJ 1000 3570 1070 4000J
+preplace netloc PSK_DM_0_FM_base 1 5 3 2210 960 3050 830 3650
+preplace netloc PSK_DM_0_FM_base_DC 1 6 2 3060 770 N
+preplace netloc PSK_DM_0_down_clk 1 5 3 2200 950 3040 950 N
+preplace netloc PSK_DM_0_mixdata4 1 6 2 3080 790 N
+preplace netloc PSK_OUT_0_PSK_data 1 6 3 3060 1540 NJ 1540 4070J
+preplace netloc PSK_OUT_0_PSK_data_ANL 1 4 3 1820 1670 N 1670 3040
+preplace netloc UART0_RX_0_1 1 0 2 NJ 1280 400
+preplace netloc axi_gpio_8_gpio_io_o 1 3 3 NJ 1540 1760 1690 2140
+preplace netloc clock_1M_0_clk_500k 1 6 2 3050 1240 3600
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 9 -10 1010 420 400 840 680 1450 900 1800 900 2150 1560 3080 1560 3610 670 4050
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 N 1220
+preplace netloc processing_system7_0_UART0_TX 1 1 9 NJ 1140 880J 1000 1390J 1130 NJ 1130 2190 1120 NJ 1120 N 1120 4030J 1110 4840J
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 8 450 410 850 990 1420 1190 1770 1310 2170 1570 3060 1570 3640 650 4080
+preplace netloc AD5664_spi_0_cs 1 6 4 3080 1920 N 1920 N 1920 NJ
+preplace netloc AD5664_spi_0_sdio 1 5 5 2190 1880 3060 1900 N 1900 N 1900 NJ
+preplace netloc AD5664_spi_0_sclk 1 6 4 3070 1880 N 1880 N 1880 NJ
+preplace netloc DAC_3_clk_25M 1 5 2 2210 1900 3040
+preplace netloc DAC_3_data 1 5 2 2200 1890 3050
+preplace netloc processing_system7_0_DDR 1 1 9 400J 1090 860J 1030 1400J 1080 NJ 1080 N 1080 NJ 1080 N 1080 NJ 1080 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 9 NJ 1100 890J 1020 1410J 1090 NJ 1090 N 1090 NJ 1090 N 1090 NJ 1090 4830J
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 430 470n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 890 610n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 870 630n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 880 650n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 830 670n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 800 440n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 2 1 790 300n
+preplace netloc ps7_0_axi_periph_M06_AXI 1 2 1 820 580n
+preplace netloc ps7_0_axi_periph_M07_AXI 1 2 1 820 750n
+preplace netloc ps7_0_axi_periph_M08_AXI 1 2 1 790 770n
+preplace netloc DAC_3|AD5664_spi_0_clk_25M 1 0 3 2390 1950 NJ 1950 2920
+preplace netloc DAC_3|AD5664_WR_0_addr 1 1 1 N 2050
+preplace netloc DAC_3|AD5664_WR_0_sele 1 1 1 N 2070
+preplace netloc DAC_3|AD5664_WR_0_data 1 1 2 2680 2170 N
+preplace netloc DAC_3|AD5664_WR_0_WB 1 1 1 N 2110
+preplace netloc DAC_3|processing_system7_0_FCLK_CLK0 1 0 2 2370 1980 2680
+preplace netloc DAC_3|rst_ps7_0_100M_peripheral_aresetn 1 0 2 2380 1990 2670
+preplace netloc DAC_3|DATA_SELE_0_DAC_data 1 0 1 N 2110
+preplace netloc DAC_3|AD5664_spi_0_sclk 1 2 1 N 2030
+preplace netloc DAC_3|AD5664_spi_0_sdio 1 2 1 N 2050
+preplace netloc DAC_3|AD5664_spi_0_cs 1 2 1 N 2070
+levelinfo -pg 1 -40 200 620 1210 1620 1990 2440 3370 3810 4678 4860
+levelinfo -hier DAC_3 * 2530 2800 *
+pagesize -pg 1 -db -bbox -sgen -200 -420 5000 2370
+pagesize -hier DAC_3 -db -bbox -sgen 2340 1930 2950 2180
+"
+}
+{
+   "da_axi4_cnt":"9",
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"26",
+   "da_ps7_cnt":"1"
+}

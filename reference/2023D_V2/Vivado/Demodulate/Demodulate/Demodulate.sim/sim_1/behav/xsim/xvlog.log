@@ -1,0 +1,60 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/dist_mem_gen_I/sim/dist_mem_gen_I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_I
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/mult_gen_0/mult_gen_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_gen_0
+INFO: [VRFC 10-311] analyzing module mult_gen_0_mult_gen_v12_0_16
+INFO: [VRFC 10-311] analyzing module mult_gen_0_luts
+INFO: [VRFC 10-311] analyzing module mult_gen_0_mult_gen_v12_0_16_viv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/dist_mem_ph/sim/dist_mem_ph.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_ph
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/two_channel_ADC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_channel_ADC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/CIC_decimation_10_fs6MHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CIC_decimation_10_fs6MHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/dist_mem_gen_Q/sim/dist_mem_gen_Q.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_Q
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_new
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/CIC_decimation_20_fs36MHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CIC_decimation_20_fs36MHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2019_G/Vivado/FM_audio_demodulate/src/two_channel_dac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_channel_dac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Phase_dev_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Phase_dev_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Demodulate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Demodulate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cordic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/IQ_generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IQ_generate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_60k_fs1_8MHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LPF_60k_fs1_8MHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LPF_20kHz_fs1_8MHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_FSM
+WARNING: [VRFC 10-3380] identifier 'standby_cnt' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:65]
+WARNING: [VRFC 10-3380] identifier 'output_cnt' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:69]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Max_Min.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Max_Min
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Get_Ma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Get_min_max
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/FSM_Max_Min.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_Max_Min
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/Judge_and_calculate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Judge_and_calculate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/testbench/TOP_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/testbench/phase_dev_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_dev_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/testbench/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.sim/sim_1/behav/xsim/glbl.v:6]

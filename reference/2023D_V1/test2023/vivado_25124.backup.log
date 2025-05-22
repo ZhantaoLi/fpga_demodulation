@@ -1,0 +1,293 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Aug  4 00:13:14 2023
+# Process ID: 25124
+# Current directory: D:/Project/ZYNQ/7035/test2023
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13360 D:\Project\ZYNQ\7035\test2023\test2023.xpr
+# Log file: D:/Project/ZYNQ/7035/test2023/vivado.log
+# Journal file: D:/Project/ZYNQ/7035/test2023\vivado.jou
+# Running On: DESKTOP-PPMNIMR, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16857 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project/ZYNQ/7035/test2023/test2023.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1575.617 ; gain = 0.000
+open_bd_design {D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_2
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_FM
+Adding component instance block -- xilinx.com:module_ref:D_trig:1.0 - D_trig_0
+Adding component instance block -- xilinx.com:module_ref:D_trig:1.0 - D_trig_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_AM
+Adding component instance block -- xilinx.com:module_ref:DAC8830_WR:1.0 - DAC8830_WR_0
+Adding component instance block -- xilinx.com:module_ref:DAC8830_spi:1.0 - DAC8830_spi_0
+Adding component instance block -- xilinx.com:module_ref:DAC8830_WR:1.0 - DAC8830_WR_0
+Adding component instance block -- xilinx.com:module_ref:DAC8830_spi:1.0 - DAC8830_spi_0
+Adding component instance block -- xilinx.com:module_ref:LTC2220:1.0 - LTC2220_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_VPP
+Adding component instance block -- xilinx.com:module_ref:MOV_VPP_TOP:1.0 - MOV_VPP_TOP_AM
+Adding component instance block -- xilinx.com:module_ref:MOV_VPP_TOP:1.0 - MOV_VPP_TOP_FM
+Adding component instance block -- xilinx.com:module_ref:D_trig:1.0 - D_trig_2
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_VPP1
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_3
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_FREQ
+Adding component instance block -- xilinx.com:module_ref:FREQ_counter:1.0 - FREQ_counter_FM
+Adding component instance block -- xilinx.com:module_ref:FREQ_counter:1.0 - FREQ_counter_AM
+Adding component instance block -- xilinx.com:module_ref:clock_1M:1.0 - clock_1M_0
+Adding component instance block -- xilinx.com:module_ref:AM_DM:1.0 - AM_DM_0
+Adding component instance block -- xilinx.com:module_ref:FM_DM:1.0 - FM_DM_0
+Adding component instance block -- xilinx.com:module_ref:PSK_DM:1.0 - PSK_DM_0
+Successfully read diagram <design_1> from block design file <D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:46 . Memory (MB): peak = 1575.617 ; gain = 0.000
+delete_bd_objs [get_bd_nets DATA_0_1] [get_bd_nets LTC2220_0_clk1] [get_bd_nets LTC2220_0_clk2] [get_bd_cells LTC2220_0]
+delete_bd_objs [get_bd_ports clk1_0] [get_bd_ports clk2_0]
+delete_bd_objs [get_bd_ports DATA_0]
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference LTC2248 LTC2248_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ADC_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'sys_rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'sys_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'sys_rst_n'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'sys_rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'sys_rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'ADC_CLK' does not have any bus interfaces associated with it.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'ADC_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-5661] Bus Interface 'sys_clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property location {8 2932 1468} [get_bd_cells LTC2248_0]
+update_module_reference design_1_LTC2248_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ADC_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'sys_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'sys_rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'sys_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'sys_rst_n'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'sys_rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'sys_rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'ADC_CLK' does not have any bus interfaces associated with it.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'ADC_CLK': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-5661] Bus Interface 'sys_clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_LTC2248_0_0 to use current project options
+WARNING: [BD 41-597] NET <AD9434_0_adc_data> has no source
+Wrote  : <D:\Project\ZYNQ\7035\test2023\test2023.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1929.168 ; gain = 19.039
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins LTC2248_0/sys_clk]
+update_compile_order -fileset sources_1
+connect_bd_net [get_bd_pins LTC2248_0/ADC_IN] [get_bd_pins D_trig_0/indata]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins LTC2248_0/ADC_IN] [get_bd_pins D_trig_0/indata]'
+startgroup
+make_bd_pins_external  [get_bd_pins LTC2248_0/ADC_IN]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins LTC2248_0/ADC_CLK]
+endgroup
+connect_bd_net [get_bd_pins LTC2248_0/ADC_CLK] [get_bd_pins D_trig_0/indata]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins LTC2248_0/ADC_CLK] [get_bd_pins D_trig_0/indata]'
+connect_bd_net [get_bd_pins LTC2248_0/ADC_CLK] [get_bd_pins D_trig_0/indata]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins LTC2248_0/ADC_CLK] [get_bd_pins D_trig_0/indata]'
+connect_bd_net [get_bd_pins LTC2248_0/ADC_data] [get_bd_pins D_trig_0/indata]
+validate_bd_design
+validate_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1981.102 ; gain = 26.160
+startgroup
+set_property -dict [list CONFIG.C_EN_STRG_QUAL {1} CONFIG.C_PROBE3_MU_CNT {2} CONFIG.C_PROBE2_MU_CNT {2} CONFIG.C_PROBE1_MU_CNT {2} CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2}] [get_bd_cells system_ila_VPP1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_INPUT_PIPE_STAGES {0}] [get_bd_cells system_ila_VPP1]
+endgroup
+validate_bd_design
+validate_bd_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2132.688 ; gain = 0.000
+generate_target all [get_files  D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:\Project\ZYNQ\7035\test2023\test2023.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/axi_gpio_1/gpio_io_i'(16) to pin '/MOV_VPP_TOP_AM/VPP_data'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/axi_gpio_0/gpio_io_i'(16) to pin '/MOV_VPP_TOP_FM/VPP_data'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/synth/design_1.v
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/axi_gpio_1/gpio_io_i'(16) to pin '/MOV_VPP_TOP_AM/VPP_data'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/axi_gpio_0/gpio_io_i'(16) to pin '/MOV_VPP_TOP_FM/VPP_data'(17) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_ooc.xdc'
+Exporting to file d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Hardware Definition File d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1_ooc.xdc'
+Exporting to file d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/hw_handoff/design_1_system_ila_0_1.hwh
+Generated Hardware Definition File d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/synth/design_1_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_FM .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_FM_0/design_1_system_ila_FM_0_ooc.xdc'
+Exporting to file d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_FM_0/bd_0/hw_handoff/design_1_system_ila_FM_0.hwh
+Generated Hardware Definition File d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_FM_0/bd_0/synth/design_1_system_ila_FM_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_AM .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_FM_2/design_1_system_ila_FM_2_ooc.xdc'
+Exporting to file d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_FM_2/bd_0/hw_handoff/design_1_system_ila_FM_2.hwh
+Generated Hardware Definition File d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_FM_2/bd_0/synth/design_1_system_ila_FM_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_VPP .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_VPP_0/design_1_system_ila_VPP_0_ooc.xdc'
+Exporting to file d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_VPP_0/bd_0/hw_handoff/design_1_system_ila_VPP_0.hwh
+Generated Hardware Definition File d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_VPP_0/bd_0/synth/design_1_system_ila_VPP_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_VPP1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_AM_0/design_1_system_ila_AM_0_ooc.xdc'
+Exporting to file d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_AM_0/bd_0/hw_handoff/design_1_system_ila_AM_0.hwh
+Generated Hardware Definition File d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_system_ila_AM_0/bd_0/synth/design_1_system_ila_AM_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_FREQ .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LTC2248_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File d:/Project/ZYNQ/7035/test2023/test2023.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2448.473 ; gain = 315.785
+catch { config_ip_cache -export [get_ips -all design_1_system_ila_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_system_ila_0_0, cache-ID = f681c66ca88b615b; cache size = 1074.094 MB.
+catch { config_ip_cache -export [get_ips -all design_1_system_ila_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_system_ila_FM_0] }
+catch { config_ip_cache -export [get_ips -all design_1_system_ila_FM_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_system_ila_FM_2, cache-ID = aa662d0fa0be2136; cache size = 1074.094 MB.
+catch { config_ip_cache -export [get_ips -all design_1_system_ila_VPP_0] }
+catch { config_ip_cache -export [get_ips -all design_1_system_ila_AM_0] }
+catch { config_ip_cache -export [get_ips -all design_1_LTC2248_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = e3a2843e0df0b35b; cache size = 1074.094 MB.
+export_ip_user_files -of_objects [get_files D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_system_ila_AM_0_synth_1 design_1_system_ila_0_1_synth_1 design_1_system_ila_FM_0_synth_1 design_1_system_ila_VPP_0_synth_1 design_1_LTC2248_0_0_synth_1 -jobs 16
+[Fri Aug  4 00:18:48 2023] Launched design_1_system_ila_AM_0_synth_1, design_1_system_ila_0_1_synth_1, design_1_system_ila_FM_0_synth_1, design_1_system_ila_VPP_0_synth_1, design_1_LTC2248_0_0_synth_1...
+Run output will be captured here:
+design_1_system_ila_AM_0_synth_1: D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_system_ila_AM_0_synth_1/runme.log
+design_1_system_ila_0_1_synth_1: D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_system_ila_0_1_synth_1/runme.log
+design_1_system_ila_FM_0_synth_1: D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_system_ila_FM_0_synth_1/runme.log
+design_1_system_ila_VPP_0_synth_1: D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_system_ila_VPP_0_synth_1/runme.log
+design_1_LTC2248_0_0_synth_1: D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_LTC2248_0_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2462.277 ; gain = 0.000
+export_simulation -of_objects [get_files D:/Project/ZYNQ/7035/test2023/test2023.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/Project/ZYNQ/7035/test2023/test2023.ip_user_files/sim_scripts -ip_user_files_dir D:/Project/ZYNQ/7035/test2023/test2023.ip_user_files -ipstatic_source_dir D:/Project/ZYNQ/7035/test2023/test2023.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Project/ZYNQ/7035/test2023/test2023.cache/compile_simlib/modelsim} {questa=D:/Project/ZYNQ/7035/test2023/test2023.cache/compile_simlib/questa} {riviera=D:/Project/ZYNQ/7035/test2023/test2023.cache/compile_simlib/riviera} {activehdl=D:/Project/ZYNQ/7035/test2023/test2023.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/Project/ZYNQ/7035/test2023/test2023.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file D:/Project/ZYNQ/7035/test2023/test2023.runs/synth_1/design_1_wrapper.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Project/ZYNQ/7035/test2023/test2023.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Aug  4 00:19:43 2023] Launched design_1_system_ila_AM_0_synth_1, design_1_system_ila_0_1_synth_1, design_1_system_ila_FM_0_synth_1, design_1_system_ila_VPP_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_system_ila_AM_0_synth_1: D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_system_ila_AM_0_synth_1/runme.log
+design_1_system_ila_0_1_synth_1: D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_system_ila_0_1_synth_1/runme.log
+design_1_system_ila_FM_0_synth_1: D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_system_ila_FM_0_synth_1/runme.log
+design_1_system_ila_VPP_0_synth_1: D:/Project/ZYNQ/7035/test2023/test2023.runs/design_1_system_ila_VPP_0_synth_1/runme.log
+synth_1: D:/Project/ZYNQ/7035/test2023/test2023.runs/synth_1/runme.log
+[Fri Aug  4 00:19:43 2023] Launched impl_1...
+Run output will be captured here: D:/Project/ZYNQ/7035/test2023/test2023.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2557.723 ; gain = 0.000
+write_hw_platform -fixed -include_bit -force -file D:/Project/ZYNQ/7035/test2023/design_1_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: D:/Project/ZYNQ/7035/test2023/design_1_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: D:/Project/ZYNQ/7035/test2023/design_1_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Xilinx/Vivado/2022.1/data/embeddedsw) loading 1 seconds
+write_hw_platform: Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 2699.219 ; gain = 141.496
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210299099808
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 4628.375 ; gain = 1929.156
+set_property PROGRAM.FILE {D:/Project/ZYNQ/7035/test2023/test2023.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {D:/Project/ZYNQ/7035/test2023/test2023.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {D:/Project/ZYNQ/7035/test2023/test2023.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 6 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_AM/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_FM/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_FREQ/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_VPP/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_VPP1/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-04 00:35:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-04 00:35:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/ZYNQ/7035/test2023/test2023.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-04 00:35:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-04 00:35:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/ZYNQ/7035/test2023/test2023.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-04 00:35:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-04 00:35:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/ZYNQ/7035/test2023/test2023.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-04 00:35:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-04 00:35:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/ZYNQ/7035/test2023/test2023.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210299099808
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  4 01:13:03 2023...

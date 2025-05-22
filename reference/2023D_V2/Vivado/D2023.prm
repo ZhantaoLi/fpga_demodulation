@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+Checksum           0xD7C945EB
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                                  Checksum
+0x00000000    0x0021728B    Aug  5 16:12:38 2023    C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.runs/impl_1/TOP_new.bit    0x011A5F5F
+File Checksum Total                                                                                                                                          0x011A5F5F

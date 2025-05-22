@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../test2023.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd" \
+
+nosort

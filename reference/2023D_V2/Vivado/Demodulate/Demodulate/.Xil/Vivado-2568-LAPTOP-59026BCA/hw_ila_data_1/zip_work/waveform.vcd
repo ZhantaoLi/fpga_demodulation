@@ -1,0 +1,41 @@
+$date
+        2023-Aug-05 15:06:11
+$end
+$version
+        Vivado v2019.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 42 " Phase_dev [41:0] $end
+$var reg 14 L A_edge_interv [13:0] $end
+$var reg 14 Z Freq_edge_interv [13:0] $end
+$var reg 14 h A_edge_interv_homo [13:0] $end
+$var reg 14 v A_freq [13:0] $end
+$var reg 14 &" F_freq [13:0] $end
+$var reg 14 4" A_min [13:0] $end
+$var reg 14 B" A_max [13:0] $end
+$var reg 3 P" signal_type [2:0] $end
+$var reg 1 S" _TRIGGER $end
+$var reg 1 T" _WINDOW $end
+$var reg 1 U" _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b110011010100100110001001010001111 "
+b11111111111111 L
+b11111111111111 Z
+b11111111111111 h
+b101 v
+b101101000 &"
+b111111111100 4"
+b1000100110001 B"
+b10 P"
+0S"
+1T"
+0U"
+$end
+#512
+1S"

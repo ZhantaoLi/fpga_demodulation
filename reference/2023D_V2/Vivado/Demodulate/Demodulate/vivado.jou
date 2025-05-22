@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar  6 11:10:10 2025
+# Process ID: 10256
+# Current directory: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7812 D:\study_learning\2023_D\2023D_V2\Vivado\Demodulate\Demodulate\Demodulate.xpr
+# Log file: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate/vivado.log
+# Journal file: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate/Demodulate.xpr

@@ -1,0 +1,2317 @@
+
+*** Running vivado
+    with args -log TOP_new.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_new.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source TOP_new.tcl -notrace
+Command: synth_design -top TOP_new -part xc7a35tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13400 
+WARNING: [Synth 8-6901] identifier 'standby_cnt' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:100]
+WARNING: [Synth 8-6901] identifier 'standby_cycles' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:100]
+WARNING: [Synth 8-6901] identifier 'judge_cnt' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:104]
+WARNING: [Synth 8-6901] identifier 'judge_cycles' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:104]
+WARNING: [Synth 8-6901] identifier 'output_cnt' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:108]
+WARNING: [Synth 8-6901] identifier 'output_cycles' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:108]
+WARNING: [Synth 8-6901] identifier 'transmit1_cnt' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:112]
+WARNING: [Synth 8-6901] identifier 'transmit_cycles' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:112]
+WARNING: [Synth 8-6901] identifier 'transmit2_cnt' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:116]
+WARNING: [Synth 8-6901] identifier 'transmit_cycles' is used before its declaration [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:116]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1008.426 ; gain = 243.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_new' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v:23]
+	Parameter ADC_width bound to: 10 - type: integer 
+	Parameter Phase_width bound to: 32 - type: integer 
+	Parameter IO_width bound to: 13 - type: integer 
+	Parameter Demod_width bound to: 14 - type: integer 
+	Parameter Phase_dev_width bound to: 42 - type: integer 
+	Parameter MESSAGE_sec_1_width bound to: 56 - type: integer 
+	Parameter MESSAGE_sec_2_width bound to: 56 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter STANDBY bound to: 3'b001 
+	Parameter JUDGE bound to: 3'b010 
+	Parameter OUTPUT bound to: 3'b011 
+	Parameter TRANSMIT_1 bound to: 3'b100 
+	Parameter TRANSMIT_2 bound to: 3'b101 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.runs/synth_1/.Xil/Vivado-848-LAPTOP-59026BCA/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.runs/synth_1/.Xil/Vivado-848-LAPTOP-59026BCA/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'two_channel_ADC' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/two_channel_ADC.v:23]
+	Parameter ADC_width bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'two_channel_ADC' (2#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/two_channel_ADC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IQ_generate' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/IQ_generate.v:24]
+	Parameter Input_width bound to: 10 - type: integer 
+	Parameter Output_width bound to: 13 - type: integer 
+	Parameter sine_width bound to: 13 - type: integer 
+	Parameter PH_width bound to: 32 - type: integer 
+	Parameter inter_freq bound to: 2 - type: integer 
+	Parameter freq_word bound to: 64'b0000000000000000000000000000000000001110001110001110001110001101 
+	Parameter CIC_in_width bound to: 13 - type: integer 
+	Parameter CIC_out_width bound to: 26 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Cordic' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:23]
+	Parameter XY_BITS bound to: 13 - type: integer 
+	Parameter PH_BITS bound to: 32 - type: integer 
+	Parameter ITERATIONS bound to: 13 - type: integer 
+	Parameter CORDIC_STYLE bound to: ROTATE - type: string 
+	Parameter PHASE_ACC bound to: ON - type: string 
+	Parameter K_COS bound to: 13'b0100110110110 
+WARNING: [Synth 8-3848] Net magnitude in module/entity Cordic does not have driver. [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Cordic' (3#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.runs/synth_1/.Xil/Vivado-848-LAPTOP-59026BCA/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (4#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.runs/synth_1/.Xil/Vivado-848-LAPTOP-59026BCA/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CIC_decimation_20_fs36MHz' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/CIC_decimation_20_fs36MHz.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'CIC_decimation_20_fs36MHz' (5#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/CIC_decimation_20_fs36MHz.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'IQ_generate' (6#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/IQ_generate.v:24]
+INFO: [Synth 8-6157] synthesizing module 'TOP_FSM' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:22]
+	Parameter IDLE bound to: 3'b000 
+	Parameter STANDBY bound to: 3'b001 
+	Parameter JUDGE bound to: 3'b010 
+	Parameter OUTPUT bound to: 3'b011 
+	Parameter TRANSMIT_1 bound to: 3'b100 
+	Parameter TRANSMIT_2 bound to: 3'b101 
+	Parameter cnt_limit bound to: 14'b10001100100111 
+	Parameter standby_cycles bound to: 18'b100011001010000000 
+	Parameter judge_cycles bound to: 13'b1110000100000 
+	Parameter output_cycles bound to: 16'b1000110010100000 
+	Parameter transmit_cycles bound to: 15'b100011001010000 
+	Parameter pulse_len bound to: 2'b10 
+	Parameter trans_pulse_len bound to: 2'b01 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:94]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:160]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:185]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:211]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:231]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:264]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_FSM' (7#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/TOP_FSM.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Demodulate' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Demodulate.v:23]
+	Parameter Input_width bound to: 13 - type: integer 
+	Parameter Output_width bound to: 14 - type: integer 
+	Parameter Phase_width bound to: 32 - type: integer 
+	Parameter Phase_dev_width bound to: 42 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Cordic__parameterized0' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:23]
+	Parameter XY_BITS bound to: 13 - type: integer 
+	Parameter PH_BITS bound to: 32 - type: integer 
+	Parameter ITERATIONS bound to: 10 - type: integer 
+	Parameter CORDIC_STYLE bound to: VECTOR - type: string 
+	Parameter PHASE_ACC bound to: OFF - type: string 
+	Parameter K_COS bound to: 13'b0100110110110 
+INFO: [Synth 8-226] default block is never used [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:291]
+INFO: [Synth 8-6155] done synthesizing module 'Cordic__parameterized0' (7#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Phase_dev_cal' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Phase_dev_cal.v:23]
+	Parameter Phase_width bound to: 32 - type: integer 
+	Parameter Phase_dev_width bound to: 42 - type: integer 
+	Parameter pi bound to: 2147483647 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FSM_Max_Min' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/FSM_Max_Min.v:23]
+	Parameter INPUT_WIDTH bound to: 42 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 3600 - type: integer 
+	Parameter LOOP_TIME bound to: 3'b101 
+	Parameter R_LOOP_TIME bound to: 31 - type: integer 
+	Parameter st_idle bound to: 4'b0001 
+	Parameter st_loop bound to: 4'b0010 
+	Parameter st_stop bound to: 4'b0100 
+INFO: [Synth 8-6157] synthesizing module 'Max_Min' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Max_Min.v:23]
+	Parameter INPUT_WIDTH bound to: 42 - type: integer 
+	Parameter OUT_WIDTH bound to: 42 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 3600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Max_Min' (8#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Max_Min.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_Max_Min' (9#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/FSM_Max_Min.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Phase_dev_cal' (10#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Phase_dev_cal.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Demodulate' (11#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Demodulate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LPF_20kHz_fs1_8MHz' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:27]
+	Parameter coeff1 bound to: 10'sb1111111000 
+	Parameter coeff2 bound to: 10'sb1111111001 
+	Parameter coeff3 bound to: 10'sb1111110111 
+	Parameter coeff4 bound to: 10'sb1111110100 
+	Parameter coeff5 bound to: 10'sb1111110001 
+	Parameter coeff6 bound to: 10'sb1111101101 
+	Parameter coeff7 bound to: 10'sb1111101010 
+	Parameter coeff8 bound to: 10'sb1111100110 
+	Parameter coeff9 bound to: 10'sb1111100011 
+	Parameter coeff10 bound to: 10'sb1111100000 
+	Parameter coeff11 bound to: 10'sb1111011110 
+	Parameter coeff12 bound to: 10'sb1111011101 
+	Parameter coeff13 bound to: 10'sb1111011101 
+	Parameter coeff14 bound to: 10'sb1111011111 
+	Parameter coeff15 bound to: 10'sb1111100010 
+	Parameter coeff16 bound to: 10'sb1111100111 
+	Parameter coeff17 bound to: 10'sb1111101111 
+	Parameter coeff18 bound to: 10'sb1111111001 
+	Parameter coeff19 bound to: 10'sb0000000110 
+	Parameter coeff20 bound to: 10'sb0000010101 
+	Parameter coeff21 bound to: 10'sb0000100111 
+	Parameter coeff22 bound to: 10'sb0000111011 
+	Parameter coeff23 bound to: 10'sb0001010010 
+	Parameter coeff24 bound to: 10'sb0001101011 
+	Parameter coeff25 bound to: 10'sb0010000110 
+	Parameter coeff26 bound to: 10'sb0010100010 
+	Parameter coeff27 bound to: 10'sb0010111111 
+	Parameter coeff28 bound to: 10'sb0011011100 
+	Parameter coeff29 bound to: 10'sb0011111010 
+	Parameter coeff30 bound to: 10'sb0100010110 
+	Parameter coeff31 bound to: 10'sb0100110010 
+	Parameter coeff32 bound to: 10'sb0101001011 
+	Parameter coeff33 bound to: 10'sb0101100011 
+	Parameter coeff34 bound to: 10'sb0101110111 
+	Parameter coeff35 bound to: 10'sb0110000111 
+	Parameter coeff36 bound to: 10'sb0110010100 
+	Parameter coeff37 bound to: 10'sb0110011101 
+	Parameter coeff38 bound to: 10'sb0110100001 
+	Parameter coeff39 bound to: 10'sb0110100001 
+	Parameter coeff40 bound to: 10'sb0110011101 
+	Parameter coeff41 bound to: 10'sb0110010100 
+	Parameter coeff42 bound to: 10'sb0110000111 
+	Parameter coeff43 bound to: 10'sb0101110111 
+	Parameter coeff44 bound to: 10'sb0101100011 
+	Parameter coeff45 bound to: 10'sb0101001011 
+	Parameter coeff46 bound to: 10'sb0100110010 
+	Parameter coeff47 bound to: 10'sb0100010110 
+	Parameter coeff48 bound to: 10'sb0011111010 
+	Parameter coeff49 bound to: 10'sb0011011100 
+	Parameter coeff50 bound to: 10'sb0010111111 
+	Parameter coeff51 bound to: 10'sb0010100010 
+	Parameter coeff52 bound to: 10'sb0010000110 
+	Parameter coeff53 bound to: 10'sb0001101011 
+	Parameter coeff54 bound to: 10'sb0001010010 
+	Parameter coeff55 bound to: 10'sb0000111011 
+	Parameter coeff56 bound to: 10'sb0000100111 
+	Parameter coeff57 bound to: 10'sb0000010101 
+	Parameter coeff58 bound to: 10'sb0000000110 
+	Parameter coeff59 bound to: 10'sb1111111001 
+	Parameter coeff60 bound to: 10'sb1111101111 
+	Parameter coeff61 bound to: 10'sb1111100111 
+	Parameter coeff62 bound to: 10'sb1111100010 
+	Parameter coeff63 bound to: 10'sb1111011111 
+	Parameter coeff64 bound to: 10'sb1111011101 
+	Parameter coeff65 bound to: 10'sb1111011101 
+	Parameter coeff66 bound to: 10'sb1111011110 
+	Parameter coeff67 bound to: 10'sb1111100000 
+	Parameter coeff68 bound to: 10'sb1111100011 
+	Parameter coeff69 bound to: 10'sb1111100110 
+	Parameter coeff70 bound to: 10'sb1111101010 
+	Parameter coeff71 bound to: 10'sb1111101101 
+	Parameter coeff72 bound to: 10'sb1111110001 
+	Parameter coeff73 bound to: 10'sb1111110100 
+	Parameter coeff74 bound to: 10'sb1111110111 
+	Parameter coeff75 bound to: 10'sb1111111001 
+	Parameter coeff76 bound to: 10'sb1111111000 
+INFO: [Synth 8-6155] done synthesizing module 'LPF_20kHz_fs1_8MHz' (12#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:27]
+INFO: [Synth 8-6157] synthesizing module 'Judge_and_calculate' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/Judge_and_calculate.v:23]
+	Parameter IO_width bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Get_min_max' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Get_Ma.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 3600 - type: integer 
+	Parameter LOOP_TIME bound to: 3'b011 
+	Parameter THRESHOLD bound to: 1500 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FSM_Max_Min__parameterized0' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/FSM_Max_Min.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 3600 - type: integer 
+	Parameter LOOP_TIME bound to: 3'b011 
+	Parameter R_LOOP_TIME bound to: 7 - type: integer 
+	Parameter st_idle bound to: 4'b0001 
+	Parameter st_loop bound to: 4'b0010 
+	Parameter st_stop bound to: 4'b0100 
+INFO: [Synth 8-6157] synthesizing module 'Max_Min__parameterized0' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Max_Min.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter OUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 3600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Max_Min__parameterized0' (12#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Max_Min.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_Max_Min__parameterized0' (12#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/FSM_Max_Min.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Get_min_max' (13#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Get_Ma.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Get_min_max__parameterized0' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Get_Ma.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 3600 - type: integer 
+	Parameter LOOP_TIME bound to: 3'b011 
+	Parameter THRESHOLD bound to: 120 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Get_min_max__parameterized0' (13#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Get_Ma.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SquareJudge' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter OUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 28800 - type: integer 
+	Parameter MIN_DL_TIME bound to: 10 - type: integer 
+	Parameter MIN_NP_DL bound to: 0 - type: integer 
+	Parameter COMP_NUM bound to: 1000 - type: integer 
+	Parameter EDGE_NUM bound to: 50 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SquareJudge' (14#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:23]
+WARNING: [Synth 8-7023] instance 'A_square_judge' of module 'SquareJudge' has 10 connections declared, but only 8 given [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/Judge_and_calculate.v:114]
+INFO: [Synth 8-6157] synthesizing module 'SquareJudge__parameterized0' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter OUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 28800 - type: integer 
+	Parameter MIN_DL_TIME bound to: 50 - type: integer 
+	Parameter MIN_NP_DL bound to: 50 - type: integer 
+	Parameter COMP_NUM bound to: 80 - type: integer 
+	Parameter EDGE_NUM bound to: 50 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SquareJudge__parameterized0' (14#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:23]
+WARNING: [Synth 8-7023] instance 'Freq_square_judge' of module 'SquareJudge' has 10 connections declared, but only 8 given [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/Judge_and_calculate.v:139]
+INFO: [Synth 8-6157] synthesizing module 'Fre_Judge' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Fre_Judge.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter OUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter MA_CNT_NUM bound to: 3600 - type: integer 
+	Parameter LOOP_TIME bound to: 1 - type: integer 
+	Parameter CNT_NUM bound to: 7200 - type: integer 
+	Parameter FMAX_NUM bound to: 18000 - type: integer 
+	Parameter MIN_DL_TIME bound to: 100 - type: integer 
+	Parameter st_idle bound to: 6'b000001 
+	Parameter st_mean bound to: 6'b000010 
+	Parameter st_judge bound to: 6'b000100 
+	Parameter st_fmax bound to: 6'b001000 
+	Parameter st_stop bound to: 6'b010000 
+INFO: [Synth 8-6157] synthesizing module 'Get_min_max__parameterized1' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Get_Ma.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 3600 - type: integer 
+	Parameter LOOP_TIME bound to: 1 - type: integer 
+	Parameter THRESHOLD bound to: 100 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FSM_Max_Min__parameterized1' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/FSM_Max_Min.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 3600 - type: integer 
+	Parameter LOOP_TIME bound to: 1 - type: integer 
+	Parameter R_LOOP_TIME bound to: 1 - type: integer 
+	Parameter st_idle bound to: 4'b0001 
+	Parameter st_loop bound to: 4'b0010 
+	Parameter st_stop bound to: 4'b0100 
+INFO: [Synth 8-6157] synthesizing module 'Max_Min__parameterized1' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Max_Min.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter OUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 3600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Max_Min__parameterized1' (14#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Max_Min.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_Max_Min__parameterized1' (14#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/FSM_Max_Min.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Get_min_max__parameterized1' (14#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Get_Ma.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SquareJudge__parameterized1' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:23]
+	Parameter INPUT_WIDTH bound to: 2 - type: integer 
+	Parameter OUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 7200 - type: integer 
+	Parameter MIN_DL_TIME bound to: 100 - type: integer 
+	Parameter MIN_NP_DL bound to: 100 - type: integer 
+	Parameter COMP_NUM bound to: 1 - type: integer 
+	Parameter EDGE_NUM bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SquareJudge__parameterized1' (14#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:23]
+WARNING: [Synth 8-7023] instance 'u_judge_1' of module 'SquareJudge' has 10 connections declared, but only 9 given [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Fre_Judge.v:281]
+INFO: [Synth 8-6157] synthesizing module 'Find_Max_Lim' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Find_Max_Lim.v:23]
+	Parameter INPUT_WIDTH bound to: 33 - type: integer 
+	Parameter OUT_WIDTH bound to: 33 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 18000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Find_Max_Lim' (15#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Find_Max_Lim.v:23]
+WARNING: [Synth 8-689] width (14) of port connection 'lim_max' does not match port width (33) of module 'Find_Max_Lim' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Fre_Judge.v:306]
+WARNING: [Synth 8-6014] Unused sequential element min_pp_width_r_reg was removed.  [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Fre_Judge.v:222]
+INFO: [Synth 8-6155] done synthesizing module 'Fre_Judge' (16#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Fre_Judge.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Judge_and_calculate' (17#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/Judge_and_calculate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Signal_discrim' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Signal_discrim.v:23]
+	Parameter IO_width bound to: 14 - type: integer 
+	Parameter CW bound to: 3'b000 
+	Parameter AM bound to: 3'b001 
+	Parameter FM bound to: 3'b010 
+	Parameter ASK bound to: 3'b101 
+	Parameter FSK bound to: 3'b110 
+	Parameter PSK bound to: 3'b111 
+	Parameter NA bound to: 3'b100 
+WARNING: [Synth 8-6014] Unused sequential element A_const_r_reg was removed.  [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Signal_discrim.v:60]
+WARNING: [Synth 8-6014] Unused sequential element A_square_r_reg was removed.  [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Signal_discrim.v:61]
+WARNING: [Synth 8-6014] Unused sequential element F_const_r_reg was removed.  [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Signal_discrim.v:63]
+WARNING: [Synth 8-6014] Unused sequential element F_square_r_reg was removed.  [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Signal_discrim.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'Signal_discrim' (18#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Signal_discrim.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Message_generator' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/Message_generator.v:23]
+	Parameter DATA_width bound to: 14 - type: integer 
+	Parameter MESSAGE_sec_1_width bound to: 56 - type: integer 
+	Parameter MESSAGE_sec_2_width bound to: 56 - type: integer 
+	Parameter CW bound to: 3'b000 
+	Parameter AM bound to: 3'b001 
+	Parameter FM bound to: 3'b010 
+	Parameter ASK bound to: 3'b101 
+	Parameter FSK bound to: 3'b110 
+	Parameter PSK bound to: 3'b111 
+	Parameter NA bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'Message_generator' (19#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/Message_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DAC_selector' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/DAC_selector.v:23]
+	Parameter IO_width bound to: 14 - type: integer 
+	Parameter CW bound to: 3'b000 
+	Parameter AM bound to: 3'b001 
+	Parameter FM bound to: 3'b010 
+	Parameter ASK bound to: 3'b101 
+	Parameter FSK bound to: 3'b110 
+	Parameter PSK bound to: 3'b111 
+	Parameter NA bound to: 3'b100 
+	Parameter TTL_high bound to: 14'b01010101111100 
+INFO: [Synth 8-6157] synthesizing module 'ASK_decision' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/ASK_decision.v:23]
+	Parameter IO_width bound to: 14 - type: integer 
+	Parameter threshold bound to: 14'b00110110101100 
+INFO: [Synth 8-6155] done synthesizing module 'ASK_decision' (20#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/ASK_decision.v:23]
+INFO: [Synth 8-6157] synthesizing module 'AGC' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/AGC.v:23]
+	Parameter IO_width bound to: 14 - type: integer 
+	Parameter threshold bound to: 14'b00100111000100 
+INFO: [Synth 8-6157] synthesizing module 'Get_min_max__parameterized2' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Get_Ma.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 3600 - type: integer 
+	Parameter LOOP_TIME bound to: 3'b011 
+	Parameter THRESHOLD bound to: 100 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Get_min_max__parameterized2' (20#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Get_Ma.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'AGC' (21#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/AGC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'AM_DC_Isolator' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/AM_DC_Isolator.v:23]
+	Parameter IO_width bound to: 14 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element add_temp_reg was removed.  [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/AM_DC_Isolator.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'AM_DC_Isolator' (22#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/AM_DC_Isolator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PSK_Judge' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/PSK_Judge.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter OUT_WIDTH bound to: 14 - type: integer 
+	Parameter HIGH_VOL bound to: 14'b01010101111100 
+	Parameter LOW_VOL bound to: 14'b10101010000100 
+	Parameter COMP_NUM bound to: 800 - type: integer 
+	Parameter MIN_DL_TIME bound to: 100 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SquareJudge__parameterized2' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:23]
+	Parameter INPUT_WIDTH bound to: 14 - type: integer 
+	Parameter OUT_WIDTH bound to: 18 - type: integer 
+	Parameter CNT_WIDTH bound to: 32 - type: integer 
+	Parameter CNT_NUM bound to: 18000 - type: integer 
+	Parameter MIN_DL_TIME bound to: 100 - type: integer 
+	Parameter MIN_NP_DL bound to: 0 - type: integer 
+	Parameter COMP_NUM bound to: 800 - type: integer 
+	Parameter EDGE_NUM bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SquareJudge__parameterized2' (22#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PSK_Judge' (23#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/PSK_Judge.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/DAC_selector.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'DAC_selector' (24#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/DAC_selector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Communicate' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/Communicate.v:23]
+	Parameter CLK_DIV bound to: 24 - type: integer 
+	Parameter BIT_WIDTH bound to: 56 - type: integer 
+	Parameter N bound to: 12 - type: integer 
+	Parameter st_wait bound to: 2'b01 
+	Parameter st_send bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'Communicate' (25#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/Communicate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'two_channel_dac' [C:/Users/86183/Desktop/dianSai/2019_G/Vivado/FM_audio_demodulate/src/two_channel_dac.v:21]
+	Parameter Input_width bound to: 14 - type: integer 
+	Parameter MODE bound to: OUTPUT - type: string 
+	Parameter DAC_width bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'two_channel_dac' (26#1) [C:/Users/86183/Desktop/dianSai/2019_G/Vivado/FM_audio_demodulate/src/two_channel_dac.v:21]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v:400]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.runs/synth_1/.Xil/Vivado-848-LAPTOP-59026BCA/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (27#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.runs/synth_1/.Xil/Vivado-848-LAPTOP-59026BCA/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Demodulate_u'. This will prevent further optimization [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v:174]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_u'. This will prevent further optimization [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v:400]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'msg_gen'. This will prevent further optimization [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v:308]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'jcu'. This will prevent further optimization [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v:227]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'discrim_u'. This will prevent further optimization [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v:255]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'selector_u'. This will prevent further optimization [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v:342]
+WARNING: [Synth 8-6014] Unused sequential element FM_demod_filtered_delay_reg was removed.  [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v:277]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_new' (28#1) [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/new/TOP_new.v:23]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port DAC1_data[3]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port DAC1_data[2]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port DAC1_data[1]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port DAC1_data[0]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port DAC2_data[3]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port DAC2_data[2]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port DAC2_data[1]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port DAC2_data[0]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[13]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[12]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[11]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[10]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[9]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[8]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[7]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[6]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[5]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[4]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[3]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[2]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[1]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_1[0]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[13]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[12]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[11]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[10]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[9]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[8]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[7]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[6]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[5]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[4]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[3]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[2]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[1]
+WARNING: [Synth 8-3331] design two_channel_dac has unconnected port Debug_2[0]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[13]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[12]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[11]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[10]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[9]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[8]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[7]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[6]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[5]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[4]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[3]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[2]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[1]
+WARNING: [Synth 8-3331] design DAC_selector has unconnected port PM_demod[0]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[13]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[12]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[11]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[10]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[9]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[8]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[7]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[6]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[5]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[4]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[3]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[2]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[1]
+WARNING: [Synth 8-3331] design Cordic has unconnected port magnitude[0]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[12]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[11]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[10]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[9]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[8]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[7]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[6]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[5]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[4]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[3]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[2]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[1]
+WARNING: [Synth 8-3331] design Cordic has unconnected port x_i[0]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[12]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[11]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[10]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[9]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[8]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[7]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[6]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[5]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[4]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[3]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[2]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[1]
+WARNING: [Synth 8-3331] design Cordic has unconnected port y_i[0]
+WARNING: [Synth 8-3331] design TOP_new has unconnected port ad1_otr
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.242 ; gain = 323.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.242 ; gain = 323.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.242 ; gain = 323.703
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.200 . Memory (MB): peak = 1088.242 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_u'
+Finished Parsing XDC File [c:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_u'
+Parsing XDC File [c:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_u'
+Finished Parsing XDC File [c:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_u'
+Parsing XDC File [c:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'IQ_DownConversion/mult_I'
+Finished Parsing XDC File [c:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'IQ_DownConversion/mult_I'
+Parsing XDC File [c:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'IQ_DownConversion/mult_Q'
+Finished Parsing XDC File [c:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'IQ_DownConversion/mult_Q'
+Parsing XDC File [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/constraints/D2023.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk_50MHz' already exists, overwriting the previous clock with the same name. [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/constraints/D2023.xdc:1]
+Finished Parsing XDC File [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/constraints/D2023.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/constraints/D2023.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_new_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_new_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/constrs_1/new/TOP_new.xdc]
+Finished Parsing XDC File [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/constrs_1/new/TOP_new.xdc]
+Parsing XDC File [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1234.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1234.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1234.023 ; gain = 469.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1234.023 ; gain = 469.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk_50MHz. (constraint file  c:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk_50MHz. (constraint file  c:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for clk_wiz_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila_u. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for IQ_DownConversion/mult_I. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for IQ_DownConversion/mult_Q. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1234.023 ; gain = 469.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:167]
+WARNING: [Synth 8-3936] Found unconnected internal register 'IQ_Gen.cos_reg' and it is trimmed from '14' to '13' bits. [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:257]
+WARNING: [Synth 8-3936] Found unconnected internal register 'IQ_Gen.sin_reg' and it is trimmed from '14' to '13' bits. [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:258]
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'TOP_FSM'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:342]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/demod/Cordic.v:182]
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'FSM_Max_Min'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/Phase_dev_cal.v:98]
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'FSM_Max_Min__parameterized0'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:166]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:166]
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'FSM_Max_Min__parameterized1'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:166]
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'Fre_Judge'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/cal/SquareJudge.v:166]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Communicate'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                 STANDBY |                              001 |                              001
+                   JUDGE |                              010 |                              010
+                  OUTPUT |                              011 |                              011
+              TRANSMIT_1 |                              100 |                              100
+              TRANSMIT_2 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'sequential' in module 'TOP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                             0001 |                             0001
+                 st_stop |                             0100 |                             0100
+                 st_loop |                             0010 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'next_state_reg' in module 'FSM_Max_Min'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                             0001 |                             0001
+                 st_stop |                             0100 |                             0100
+                 st_loop |                             0010 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'next_state_reg' in module 'FSM_Max_Min__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                             0001 |                             0001
+                 st_stop |                             0100 |                             0100
+                 st_loop |                             0010 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'next_state_reg' in module 'FSM_Max_Min__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_idle |                           000001 |                           000001
+                 st_mean |                           000010 |                           000010
+                st_judge |                           000100 |                           000100
+                 st_fmax |                           001000 |                           001000
+                 st_stop |                           010000 |                           010000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'next_state_reg' in module 'Fre_Judge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 st_wait |                               01 |                               01
+                 st_send |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'Communicate'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1234.023 ; gain = 469.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |TOP_new__GB0  |           1|     26131|
+|2     |TOP_new__GB1  |           1|     10378|
+|3     |TOP_new__GB2  |           1|      9891|
+|4     |TOP_new__GB3  |           1|     10832|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     47 Bit       Adders := 2     
+	   3 Input     42 Bit       Adders := 2     
+	   3 Input     33 Bit       Adders := 15    
+	   2 Input     33 Bit       Adders := 23    
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	  75 Input     28 Bit       Adders := 1     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   3 Input     26 Bit       Adders := 2     
+	   4 Input     26 Bit       Adders := 2     
+	   5 Input     26 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 8     
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 8     
+	   2 Input     15 Bit       Adders := 22    
+	   3 Input     15 Bit       Adders := 48    
+	   2 Input     14 Bit       Adders := 5     
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 7     
+	   2 Input     10 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 5     
+	   3 Input      4 Bit       Adders := 1     
+	   4 Input      4 Bit       Adders := 1     
+	   5 Input      4 Bit       Adders := 1     
+	   6 Input      4 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 10    
++---Registers : 
+	               56 Bit    Registers := 1     
+	               47 Bit    Registers := 4     
+	               42 Bit    Registers := 12    
+	               33 Bit    Registers := 54    
+	               32 Bit    Registers := 39    
+	               29 Bit    Registers := 1     
+	               26 Bit    Registers := 8     
+	               18 Bit    Registers := 3     
+	               17 Bit    Registers := 16    
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 64    
+	               14 Bit    Registers := 151   
+	               13 Bit    Registers := 7     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 6     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 36    
+	                1 Bit    Registers := 90    
++---Multipliers : 
+	                16x29  Multipliers := 1     
++---Muxes : 
+	   2 Input     56 Bit        Muxes := 2     
+	   2 Input     47 Bit        Muxes := 2     
+	   4 Input     47 Bit        Muxes := 2     
+	   2 Input     42 Bit        Muxes := 8     
+	   3 Input     42 Bit        Muxes := 1     
+	   4 Input     42 Bit        Muxes := 2     
+	   2 Input     33 Bit        Muxes := 34    
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     30 Bit        Muxes := 2     
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 2     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     22 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   3 Input     18 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 8     
+	   4 Input     17 Bit        Muxes := 8     
+	   3 Input     16 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 59    
+	   4 Input     15 Bit        Muxes := 6     
+	   2 Input     14 Bit        Muxes := 49    
+	   4 Input     14 Bit        Muxes := 13    
+	   3 Input     14 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   4 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 7     
+	   3 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 11    
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 23    
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 18    
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 165   
+	   6 Input      1 Bit        Muxes := 22    
+	   3 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 49    
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TOP_new 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     56 Bit        Muxes := 2     
+Module TOP_FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 5     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input     18 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 2     
+	   3 Input     13 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 13    
+	   6 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 5     
+Module Max_Min__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module FSM_Max_Min__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 4     
+	               14 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   4 Input     17 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   4 Input     14 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 7     
+Module Get_min_max 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module Max_Min__parameterized0__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module FSM_Max_Min__parameterized0__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 4     
+	               14 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   4 Input     17 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   4 Input     14 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 7     
+Module Get_min_max__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module SquareJudge 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 3     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 5     
+	               32 Bit    Registers := 5     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 14    
+Module SquareJudge__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 3     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 5     
+	               32 Bit    Registers := 5     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 14    
+Module Max_Min__parameterized1__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module FSM_Max_Min__parameterized1__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 4     
+	               14 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   4 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   4 Input     14 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 7     
+Module Get_min_max__parameterized1__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module SquareJudge__parameterized1__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 5     
+	               32 Bit    Registers := 5     
+	               14 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 14    
+Module Find_Max_Lim__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Fre_Judge__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   3 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+Module Max_Min__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module FSM_Max_Min__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 4     
+	               14 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   4 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   4 Input     14 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 7     
+Module Get_min_max__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module SquareJudge__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 5     
+	               32 Bit    Registers := 5     
+	               14 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 14    
+Module Find_Max_Lim 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Fre_Judge 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   3 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+Module Judge_and_calculate 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 2     
+Module Signal_discrim 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Message_generator 
+Detailed RTL Component Info : 
++---Registers : 
+	               42 Bit    Registers := 1     
+	               14 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     42 Bit        Muxes := 1     
+	   3 Input     42 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 8     
+	   3 Input     14 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ASK_decision 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 2     
+Module Max_Min__parameterized0__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module FSM_Max_Min__parameterized0__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 4     
+	               14 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   4 Input     17 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   4 Input     14 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 7     
+Module Get_min_max__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module AGC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   4 Input      4 Bit       Adders := 1     
+	   5 Input      4 Bit       Adders := 1     
+	   6 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Max_Min__parameterized0__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module FSM_Max_Min__parameterized0__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 4     
+	               14 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   4 Input     17 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   4 Input     14 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 7     
+Module Get_min_max__parameterized2__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module AM_DC_Isolator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 2     
+Module SquareJudge__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 3     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 5     
+	               32 Bit    Registers := 5     
+	               18 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 14    
+Module PSK_Judge 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+Module DAC_selector 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module Communicate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 7     
+Module Cordic__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 10    
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 3     
+	   3 Input     15 Bit       Adders := 20    
++---Registers : 
+	               33 Bit    Registers := 11    
+	               32 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               15 Bit    Registers := 22    
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 11    
++---Multipliers : 
+	                16x29  Multipliers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 20    
+	   2 Input      2 Bit        Muxes := 1     
+Module Max_Min 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               42 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     42 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module FSM_Max_Min 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     47 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               47 Bit    Registers := 4     
+	               42 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   4 Input     47 Bit        Muxes := 2     
+	   2 Input     42 Bit        Muxes := 2     
+	   4 Input     42 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 7     
+Module Phase_dev_cal 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     42 Bit       Adders := 2     
++---Registers : 
+	               42 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     42 Bit        Muxes := 3     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module Demodulate 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               42 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               14 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+Module LPF_20kHz_fs1_8MHz 
+Detailed RTL Component Info : 
++---Adders : 
+	  75 Input     28 Bit       Adders := 1     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 4     
++---Registers : 
+	               14 Bit    Registers := 77    
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 4     
+Module two_channel_ADC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+Module two_channel_dac 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 4     
+Module Cordic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 13    
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   3 Input     15 Bit       Adders := 26    
++---Registers : 
+	               33 Bit    Registers := 14    
+	               32 Bit    Registers := 1     
+	               15 Bit    Registers := 29    
+	               13 Bit    Registers := 2     
+	                2 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 26    
+	   4 Input     13 Bit        Muxes := 2     
+Module CIC_decimation_20_fs36MHz__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     26 Bit       Adders := 1     
+	   4 Input     26 Bit       Adders := 1     
+	   5 Input     26 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 4     
+	               13 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module CIC_decimation_20_fs36MHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     26 Bit       Adders := 1     
+	   4 Input     26 Bit       Adders := 1     
+	   5 Input     26 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 4     
+	               13 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP mul_temp_67, operation Mode is: A*(B:0x3ffed).
+DSP Report: operator mul_temp_67 is absorbed into DSP mul_temp_67.
+DSP Report: Generating DSP mul_temp_66, operation Mode is: A*(B:0x3ffea).
+DSP Report: operator mul_temp_66 is absorbed into DSP mul_temp_66.
+DSP Report: Generating DSP mul_temp_65, operation Mode is: A*(B:0x3ffe6).
+DSP Report: operator mul_temp_65 is absorbed into DSP mul_temp_65.
+DSP Report: Generating DSP mul_temp_64, operation Mode is: A*(B:0x3ffe3).
+DSP Report: operator mul_temp_64 is absorbed into DSP mul_temp_64.
+DSP Report: Generating DSP mul_temp_63, operation Mode is: A*(B:0x3ffde).
+DSP Report: operator mul_temp_63 is absorbed into DSP mul_temp_63.
+DSP Report: Generating DSP mul_temp_62, operation Mode is: A*(B:0x3ffdd).
+DSP Report: operator mul_temp_62 is absorbed into DSP mul_temp_62.
+DSP Report: Generating DSP mul_temp_61, operation Mode is: A*(B:0x3ffdd).
+DSP Report: operator mul_temp_61 is absorbed into DSP mul_temp_61.
+DSP Report: Generating DSP mul_temp_60, operation Mode is: A*(B:0x3ffdf).
+DSP Report: operator mul_temp_60 is absorbed into DSP mul_temp_60.
+DSP Report: Generating DSP mul_temp_59, operation Mode is: A*(B:0x3ffe2).
+DSP Report: operator mul_temp_59 is absorbed into DSP mul_temp_59.
+DSP Report: Generating DSP mul_temp_58, operation Mode is: A*(B:0x3ffe7).
+DSP Report: operator mul_temp_58 is absorbed into DSP mul_temp_58.
+DSP Report: Generating DSP mul_temp_57, operation Mode is: A*(B:0x3ffef).
+DSP Report: operator mul_temp_57 is absorbed into DSP mul_temp_57.
+DSP Report: Generating DSP mul_temp_54, operation Mode is: A*(B:0x15).
+DSP Report: operator mul_temp_54 is absorbed into DSP mul_temp_54.
+DSP Report: Generating DSP mul_temp_53, operation Mode is: A*(B:0x27).
+DSP Report: operator mul_temp_53 is absorbed into DSP mul_temp_53.
+DSP Report: Generating DSP mul_temp_52, operation Mode is: A*(B:0x3b).
+DSP Report: operator mul_temp_52 is absorbed into DSP mul_temp_52.
+DSP Report: Generating DSP mul_temp_51, operation Mode is: A*(B:0x52).
+DSP Report: operator mul_temp_51 is absorbed into DSP mul_temp_51.
+DSP Report: Generating DSP mul_temp_50, operation Mode is: A*(B:0x6b).
+DSP Report: operator mul_temp_50 is absorbed into DSP mul_temp_50.
+DSP Report: Generating DSP mul_temp_49, operation Mode is: A*(B:0x86).
+DSP Report: operator mul_temp_49 is absorbed into DSP mul_temp_49.
+DSP Report: Generating DSP mul_temp_48, operation Mode is: A*(B:0xa2).
+DSP Report: operator mul_temp_48 is absorbed into DSP mul_temp_48.
+DSP Report: Generating DSP mul_temp_47, operation Mode is: A*(B:0xbf).
+DSP Report: operator mul_temp_47 is absorbed into DSP mul_temp_47.
+DSP Report: Generating DSP mul_temp_46, operation Mode is: A*(B:0xdc).
+DSP Report: operator mul_temp_46 is absorbed into DSP mul_temp_46.
+DSP Report: Generating DSP mul_temp_45, operation Mode is: A*(B:0xfa).
+DSP Report: operator mul_temp_45 is absorbed into DSP mul_temp_45.
+DSP Report: Generating DSP mul_temp_44, operation Mode is: A*(B:0x116).
+DSP Report: operator mul_temp_44 is absorbed into DSP mul_temp_44.
+DSP Report: Generating DSP mul_temp_43, operation Mode is: A*(B:0x132).
+DSP Report: operator mul_temp_43 is absorbed into DSP mul_temp_43.
+DSP Report: Generating DSP mul_temp_42, operation Mode is: A*(B:0x14b).
+DSP Report: operator mul_temp_42 is absorbed into DSP mul_temp_42.
+DSP Report: Generating DSP mul_temp_41, operation Mode is: A*(B:0x163).
+DSP Report: operator mul_temp_41 is absorbed into DSP mul_temp_41.
+DSP Report: Generating DSP mul_temp_40, operation Mode is: A*(B:0x177).
+DSP Report: operator mul_temp_40 is absorbed into DSP mul_temp_40.
+DSP Report: Generating DSP mul_temp_39, operation Mode is: A*(B:0x187).
+DSP Report: operator mul_temp_39 is absorbed into DSP mul_temp_39.
+DSP Report: Generating DSP mul_temp_38, operation Mode is: A*(B:0x194).
+DSP Report: operator mul_temp_38 is absorbed into DSP mul_temp_38.
+DSP Report: Generating DSP mul_temp_37, operation Mode is: A*(B:0x19d).
+DSP Report: operator mul_temp_37 is absorbed into DSP mul_temp_37.
+DSP Report: Generating DSP mul_temp_36, operation Mode is: A*(B:0x1a1).
+DSP Report: operator mul_temp_36 is absorbed into DSP mul_temp_36.
+DSP Report: Generating DSP mul_temp_35, operation Mode is: A*(B:0x1a1).
+DSP Report: operator mul_temp_35 is absorbed into DSP mul_temp_35.
+DSP Report: Generating DSP mul_temp_34, operation Mode is: A*(B:0x19d).
+DSP Report: operator mul_temp_34 is absorbed into DSP mul_temp_34.
+DSP Report: Generating DSP mul_temp_33, operation Mode is: A*(B:0x194).
+DSP Report: operator mul_temp_33 is absorbed into DSP mul_temp_33.
+DSP Report: Generating DSP mul_temp_32, operation Mode is: A*(B:0x187).
+DSP Report: operator mul_temp_32 is absorbed into DSP mul_temp_32.
+DSP Report: Generating DSP mul_temp_31, operation Mode is: A*(B:0x177).
+DSP Report: operator mul_temp_31 is absorbed into DSP mul_temp_31.
+DSP Report: Generating DSP mul_temp_30, operation Mode is: A*(B:0x163).
+DSP Report: operator mul_temp_30 is absorbed into DSP mul_temp_30.
+DSP Report: Generating DSP mul_temp_29, operation Mode is: A*(B:0x14b).
+DSP Report: operator mul_temp_29 is absorbed into DSP mul_temp_29.
+DSP Report: Generating DSP mul_temp_28, operation Mode is: A*(B:0x132).
+DSP Report: operator mul_temp_28 is absorbed into DSP mul_temp_28.
+DSP Report: Generating DSP mul_temp_27, operation Mode is: A*(B:0x116).
+DSP Report: operator mul_temp_27 is absorbed into DSP mul_temp_27.
+DSP Report: Generating DSP mul_temp_26, operation Mode is: A*(B:0xfa).
+DSP Report: operator mul_temp_26 is absorbed into DSP mul_temp_26.
+DSP Report: Generating DSP mul_temp_25, operation Mode is: A*(B:0xdc).
+DSP Report: operator mul_temp_25 is absorbed into DSP mul_temp_25.
+DSP Report: Generating DSP mul_temp_24, operation Mode is: A*(B:0xbf).
+DSP Report: operator mul_temp_24 is absorbed into DSP mul_temp_24.
+DSP Report: Generating DSP mul_temp_23, operation Mode is: A*(B:0xa2).
+DSP Report: operator mul_temp_23 is absorbed into DSP mul_temp_23.
+DSP Report: Generating DSP mul_temp_22, operation Mode is: A*(B:0x86).
+DSP Report: operator mul_temp_22 is absorbed into DSP mul_temp_22.
+DSP Report: Generating DSP mul_temp_21, operation Mode is: A*(B:0x6b).
+DSP Report: operator mul_temp_21 is absorbed into DSP mul_temp_21.
+DSP Report: Generating DSP mul_temp_20, operation Mode is: A*(B:0x52).
+DSP Report: operator mul_temp_20 is absorbed into DSP mul_temp_20.
+DSP Report: Generating DSP mul_temp_19, operation Mode is: A*(B:0x3b).
+DSP Report: operator mul_temp_19 is absorbed into DSP mul_temp_19.
+DSP Report: Generating DSP mul_temp_18, operation Mode is: A*(B:0x27).
+DSP Report: operator mul_temp_18 is absorbed into DSP mul_temp_18.
+DSP Report: Generating DSP mul_temp_17, operation Mode is: A*(B:0x15).
+DSP Report: operator mul_temp_17 is absorbed into DSP mul_temp_17.
+DSP Report: Generating DSP mul_temp_14, operation Mode is: A*(B:0x3ffef).
+DSP Report: operator mul_temp_14 is absorbed into DSP mul_temp_14.
+DSP Report: Generating DSP mul_temp_13, operation Mode is: A*(B:0x3ffe7).
+DSP Report: operator mul_temp_13 is absorbed into DSP mul_temp_13.
+DSP Report: Generating DSP mul_temp_12, operation Mode is: A*(B:0x3ffe2).
+DSP Report: operator mul_temp_12 is absorbed into DSP mul_temp_12.
+DSP Report: Generating DSP mul_temp_11, operation Mode is: A*(B:0x3ffdf).
+DSP Report: operator mul_temp_11 is absorbed into DSP mul_temp_11.
+DSP Report: Generating DSP mul_temp_10, operation Mode is: A*(B:0x3ffdd).
+DSP Report: operator mul_temp_10 is absorbed into DSP mul_temp_10.
+DSP Report: Generating DSP mul_temp_9, operation Mode is: A*(B:0x3ffdd).
+DSP Report: operator mul_temp_9 is absorbed into DSP mul_temp_9.
+DSP Report: Generating DSP mul_temp_8, operation Mode is: A*(B:0x3ffde).
+DSP Report: operator mul_temp_8 is absorbed into DSP mul_temp_8.
+DSP Report: Generating DSP mul_temp_7, operation Mode is: A*(B:0x3ffe3).
+DSP Report: operator mul_temp_7 is absorbed into DSP mul_temp_7.
+DSP Report: Generating DSP mul_temp_6, operation Mode is: A*(B:0x3ffe6).
+DSP Report: operator mul_temp_6 is absorbed into DSP mul_temp_6.
+DSP Report: Generating DSP mul_temp_5, operation Mode is: A*(B:0x3ffea).
+DSP Report: operator mul_temp_5 is absorbed into DSP mul_temp_5.
+DSP Report: Generating DSP mul_temp_4, operation Mode is: A*(B:0x3ffed).
+DSP Report: operator mul_temp_4 is absorbed into DSP mul_temp_4.
+WARNING: [Synth 8-3331] design TOP_new has unconnected port ad1_otr
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[31]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[30]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[28]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[29]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[24]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[25]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[26]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[27]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[18]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[19]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[16]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[17]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[22]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[20]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[21]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[14]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[15]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[12]' (FDCE) to 'i_0/jcu/A_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/A_Freq_judge/\u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[13] )
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[31]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[30]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[28]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[29]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[24]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[25]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[26]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[27]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[18]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[19]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[16]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[17]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[22]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[23]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[20]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[21]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[14]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[15]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[12]' (FDCE) to 'i_0/jcu/F_Freq_judge/u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/F_Freq_judge/\u_get_ma_1/u_fsm_max_min_0/u_max_0/cnt_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/A_Freq_judge/\u_get_ma_1/u_fsm_max_min_0/next_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/F_Freq_judge/\u_get_ma_1/u_fsm_max_min_0/next_state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[31]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[30]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[28]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[29]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[24]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[25]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[26]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[27]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[18]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[19]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[16]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[17]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[22]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[23]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[20]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_Freq_judge/u/cnt_reg[21]' (FDCE) to 'i_0/jcu/A_Freq_judge/u/cnt_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/A_Freq_judge/\u/cnt_reg[15] )
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[31]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[30]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[28]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[29]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[24]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[25]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[26]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[27]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[18]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[19]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[16]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[17]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[22]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[23]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[20]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/F_Freq_judge/u/cnt_reg[21]' (FDCE) to 'i_0/jcu/F_Freq_judge/u/cnt_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/F_Freq_judge/\u/cnt_reg[15] )
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[31]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[30]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[28]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[29]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[24]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[25]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[26]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[27]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[18]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[19]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[16]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[17]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[22]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[20]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[21]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[14]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[15]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[12]' (FDCE) to 'i_0/jcu/Freq_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/Freq_const_discrim/\u_fsm_max_min_0/u_max_0/cnt_reg[13] )
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[31]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[30]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[28]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[29]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[24]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[25]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[26]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[27]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[18]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[19]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[16]' (FDCE) to 'i_0/jcu/A_const_discrim/u_fsm_max_min_0/u_max_0/cnt_reg[23]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/A_const_discrim/\u_fsm_max_min_0/u_max_0/cnt_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/Freq_const_discrim/\u_fsm_max_min_0/next_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/A_const_discrim/\u_fsm_max_min_0/next_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/A_Freq_judge/\next_state_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/F_Freq_judge/\next_state_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/selector_u/\AGC_u/nolabel_line57/u_fsm_max_min_0/u_max_0/cnt_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/selector_u/\DC_Isolator_u/nolabel_line55/u_fsm_max_min_0/u_max_0/cnt_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/A_Freq_judge/\u_judge_1/cnt_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/F_Freq_judge/\u_judge_1/cnt_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/A_square_judge/\cnt_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/Freq_square_judge/\cnt_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/selector_u/\AGC_u/nolabel_line57/u_fsm_max_min_0/next_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/selector_u/\DC_Isolator_u/nolabel_line55/u_fsm_max_min_0/next_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/selector_u/\u_psk_judge_01/u_psk_judge/cnt_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/selector_u/\dec_u/AM_demod_dec_reg[13] )
+WARNING: [Synth 8-3332] Sequential element (A_edge_interv_r_regi_41) is unused and will be removed from module Signal_discrim.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/Demodule_Gen.z_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\phase_dev_u/u/u_max_0/cnt_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\phase_dev_u/u/next_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\AM_demod_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\AM_demod_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\AM_demod_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.x_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.x_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.x_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.x_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.x_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.x_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.x_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.x_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.y_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.z_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.z_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/IQ_Gen.z_reg[0][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\DAC_u/DAC2_data_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\DAC_u/DAC2_data_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/CORDIC[0].z_reg[1][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/Demodulate_u/\Cordic_u/CORDIC[1].z_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/CORDIC[0].y_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\IQ_DownConversion/cordic_u/CORDIC[0].x_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/\AM_demod_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/selector_u/\dec_u/AM_demod_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/jcu/A_square_judge/\dat_r_delay_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1234.023 ; gain = 469.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++-------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffed) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffea) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffe6) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffe3) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffde) | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffdd) | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffdd) | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffdf) | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffe2) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffe7) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffef) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x15)    | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x27)    | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3b)    | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x52)    | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x6b)    | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x86)    | 14     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0xa2)    | 14     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0xbf)    | 14     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0xdc)    | 14     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0xfa)    | 14     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x116)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x132)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x14b)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x163)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x177)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x187)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x194)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x19d)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x1a1)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x1a1)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x19d)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x194)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x187)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x177)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x163)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x14b)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x132)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x116)   | 14     | 10     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0xfa)    | 14     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0xdc)    | 14     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0xbf)    | 14     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0xa2)    | 14     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x86)    | 14     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x6b)    | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x52)    | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3b)    | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x27)    | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x15)    | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffef) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffe7) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffe2) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffdf) | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffdd) | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffdd) | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffde) | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffe3) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffe6) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffea) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LPF_20kHz_fs1_8MHz | A*(B:0x3ffed) | 14     | 6      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |TOP_new__GB0  |           1|      8840|
+|2     |TOP_new__GB1  |           1|      5491|
+|3     |TOP_new__GB2  |           1|      9734|
+|4     |TOP_new__GB3  |           1|      5222|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk_50MHz'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1254.297 ; gain = 489.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1319.680 ; gain = 555.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |TOP_new__GB0  |           1|      8840|
+|2     |TOP_new__GB1  |           1|      5491|
+|3     |TOP_new__GB2  |           1|      9734|
+|4     |TOP_new__GB3  |           1|      5222|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/src/filter/LPF_20kHz_fs1_8MHz.v:587]
+INFO: [Common 17-14] Message 'Synth 8-5844' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1319.719 ; gain = 555.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop A_Freq_judge/u_judge_1/np_delta_edge_time_reg[32] is being inverted and renamed to A_Freq_judge/u_judge_1/np_delta_edge_time_reg[32]_inv.
+INFO: [Synth 8-5365] Flop F_Freq_judge/u_judge_1/np_delta_edge_time_reg[32] is being inverted and renamed to F_Freq_judge/u_judge_1/np_delta_edge_time_reg[32]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[1] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[1]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[2] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[2]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[3] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[3]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[4] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[4]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[5] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[5]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[6] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[6]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[7] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[7]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[8] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[8]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[9] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[9]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[10] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[10]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[11] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[11]_inv.
+INFO: [Synth 8-5365] Flop IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[12] is being inverted and renamed to IQ_DownConversion/cordic_u/IQ_Gen.sin_reg[12]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 1322.500 ; gain = 557.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 1322.500 ; gain = 557.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1322.500 ; gain = 557.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1322.500 ; gain = 557.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1322.500 ; gain = 557.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1322.500 ; gain = 557.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Demodulate  | Cordic_u/CORDIC[9].Quad_data_reg[10][1]                    | 10     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|TOP_new     | IQ_DownConversion/cordic_u/CORDIC[12].Quad_data_reg[13][1] | 13     | 2     | NO           | NO                 | YES               | 2      | 0       | 
++------------+------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
+|2     |clk_wiz_0     |         1|
+|3     |mult_gen_0    |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |clk_wiz_0     |     1|
+|2     |ila_0         |     1|
+|3     |mult_gen_0    |     1|
+|4     |mult_gen_0__1 |     1|
+|5     |BUFG          |     1|
+|6     |CARRY4        |  1317|
+|7     |DSP48E1       |    60|
+|8     |LUT1          |   507|
+|9     |LUT2          |  3878|
+|10    |LUT3          |  1979|
+|11    |LUT4          |  1485|
+|12    |LUT5          |   552|
+|13    |LUT6          |   405|
+|14    |MUXF7         |     3|
+|15    |MUXF8         |     1|
+|16    |SRL16E        |     4|
+|17    |FDCE          |  4115|
+|18    |FDPE          |   557|
+|19    |FDRE          |  1496|
+|20    |IBUF          |    12|
+|21    |OBUF          |    26|
++------+--------------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------------------+------+
+|      |Instance                |Module                         |Cells |
++------+------------------------+-------------------------------+------+
+|1     |top                     |                               | 16447|
+|2     |  jcu                   |Judge_and_calculate            |  4126|
+|3     |    A_Freq_judge        |Fre_Judge                      |   969|
+|4     |      u                 |Find_Max_Lim_9                 |   213|
+|5     |      u_get_ma_1        |Get_min_max__parameterized1_10 |   320|
+|6     |        u_fsm_max_min_0 |FSM_Max_Min__parameterized1_12 |   267|
+|7     |          u_max_0       |Max_Min__parameterized1_13     |   114|
+|8     |      u_judge_1         |SquareJudge__parameterized1_11 |   404|
+|9     |    A_const_discrim     |Get_min_max                    |   359|
+|10    |      u_fsm_max_min_0   |FSM_Max_Min__parameterized0_7  |   313|
+|11    |        u_max_0         |Max_Min__parameterized0_8      |   137|
+|12    |    A_square_judge      |SquareJudge                    |   743|
+|13    |    F_Freq_judge        |Fre_Judge_4                    |  1005|
+|14    |      u                 |Find_Max_Lim                   |   213|
+|15    |      u_get_ma_1        |Get_min_max__parameterized1    |   349|
+|16    |        u_fsm_max_min_0 |FSM_Max_Min__parameterized1    |   298|
+|17    |          u_max_0       |Max_Min__parameterized1        |   127|
+|18    |      u_judge_1         |SquareJudge__parameterized1    |   411|
+|19    |    Freq_const_discrim  |Get_min_max__parameterized0    |   364|
+|20    |      u_fsm_max_min_0   |FSM_Max_Min__parameterized0_5  |   318|
+|21    |        u_max_0         |Max_Min__parameterized0_6      |   127|
+|22    |    Freq_square_judge   |SquareJudge__parameterized0    |   635|
+|23    |  discrim_u             |Signal_discrim                 |    40|
+|24    |  msg_gen               |Message_generator              |   205|
+|25    |  selector_u            |DAC_selector                   |   991|
+|26    |    AGC_u               |AGC                            |   302|
+|27    |      nolabel_line57    |Get_min_max__parameterized2_1  |   256|
+|28    |        u_fsm_max_min_0 |FSM_Max_Min__parameterized0_2  |   216|
+|29    |          u_max_0       |Max_Min__parameterized0_3      |   110|
+|30    |    DC_Isolator_u       |AM_DC_Isolator                 |   411|
+|31    |      nolabel_line55    |Get_min_max__parameterized2    |   351|
+|32    |        u_fsm_max_min_0 |FSM_Max_Min__parameterized0    |   323|
+|33    |          u_max_0       |Max_Min__parameterized0        |   147|
+|34    |    dec_u               |ASK_decision                   |    16|
+|35    |    u_psk_judge_01      |PSK_Judge                      |   245|
+|36    |      u_psk_judge       |SquareJudge__parameterized2    |   240|
+|37    |  Demodulate_u          |Demodulate                     |  3704|
+|38    |    Cordic_u            |Cordic__parameterized0         |  1945|
+|39    |    phase_dev_u         |Phase_dev_cal                  |  1620|
+|40    |      u                 |FSM_Max_Min                    |  1016|
+|41    |        u_max_0         |Max_Min                        |   429|
+|42    |  ADC_controller        |two_channel_ADC                |    11|
+|43    |  DAC_u                 |two_channel_dac                |    30|
+|44    |  FSM_u                 |TOP_FSM                        |   354|
+|45    |  IQ_DownConversion     |IQ_generate                    |  3088|
+|46    |    CIC_I               |CIC_decimation_20_fs36MHz      |   513|
+|47    |    CIC_Q               |CIC_decimation_20_fs36MHz_0    |   511|
+|48    |    cordic_u            |Cordic                         |  2014|
+|49    |  LPF_1                 |LPF_20kHz_fs1_8MHz             |  3623|
+|50    |  commu_u               |Communicate                    |   208|
++------+------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1322.500 ; gain = 557.961
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:04 . Memory (MB): peak = 1322.500 ; gain = 412.180
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1322.500 ; gain = 557.961
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.237 . Memory (MB): peak = 1334.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1381 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1334.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+499 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 1334.602 ; gain = 842.996
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1334.602 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate/Demodulate.runs/synth_1/TOP_new.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_new_utilization_synth.rpt -pb TOP_new_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  5 14:49:49 2023...

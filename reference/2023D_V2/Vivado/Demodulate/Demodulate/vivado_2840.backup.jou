@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Dec 26 20:45:16 2024
+# Process ID: 2840
+# Current directory: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16884 D:\study_learning\2023_D\2023D_V2\Vivado\Demodulate\Demodulate\Demodulate.xpr
+# Log file: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate/vivado.log
+# Journal file: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate\vivado.jou
+# Running On: DELL-LZT, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16889 MB
+#-----------------------------------------------------------
+start_gui
+open_project -read_only D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate/Demodulate.xpr

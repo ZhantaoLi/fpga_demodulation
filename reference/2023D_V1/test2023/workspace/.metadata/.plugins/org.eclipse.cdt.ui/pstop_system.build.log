@@ -1,0 +1,10 @@
+15:44:32 **** Incremental Build of configuration Release for project pstop_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 58399 D:/Project/ZYNQ/7035/test2023/workspace/DS2023/export/DS2023/DS2023.xpfm standalone_domain D:/Project/ZYNQ/7035/test2023/workspace/pstop_system/Release/system.bif
+sdcard_gen --xpfm D:/Project/ZYNQ/7035/test2023/workspace/DS2023/export/DS2023/DS2023.xpfm --sys_config DS2023 --bif D:/Project/ZYNQ/7035/test2023/workspace/pstop_system/Release/system.bif --bitstream D:/Project/ZYNQ/7035/test2023/workspace/pstop/_ide/bitstream/design_1_wrapper.bit --elf D:/Project/ZYNQ/7035/test2023/workspace/pstop/Release/pstop.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/Project/ZYNQ/7035/test2023/workspace/pstop/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2022.2/bin/bootgen  -image D:/Project/ZYNQ/7035/test2023/workspace/pstop_system/Release/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:44:38 Build Finished (took 5s.812ms)
+

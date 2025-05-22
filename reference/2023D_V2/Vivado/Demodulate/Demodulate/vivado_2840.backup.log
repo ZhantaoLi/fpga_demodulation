@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Dec 26 20:45:16 2024
+# Process ID: 2840
+# Current directory: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16884 D:\study_learning\2023_D\2023D_V2\Vivado\Demodulate\Demodulate\Demodulate.xpr
+# Log file: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate/vivado.log
+# Journal file: D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate\vivado.jou
+# Running On: DELL-LZT, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16889 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Vivado/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project -read_only D:/study_learning/2023_D/2023D_V2/Vivado/Demodulate/Demodulate/Demodulate.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/86183/Desktop/dianSai/2023_D/Vivado/Demodulate/Demodulate' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/study_learning/2023_D/2019_G/Vivado/FM_audio_demodulate/src/two_channel_dac.v', nor could it be found using path 'C:/Users/86183/Desktop/dianSai/2019_G/Vivado/FM_audio_demodulate/src/two_channel_dac.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_Q' is locked:
+* Project containing IP 'dist_mem_gen_Q' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Project containing IP 'clk_wiz_0' is read-only. * IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'ila_0' is locked:
+* Project containing IP 'ila_0' is read-only. * IP definition 'ILA (Integrated Logic Analyzer) (6.2)' for IP 'ila_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_gen_I' is locked:
+* Project containing IP 'dist_mem_gen_I' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'mult_gen_0' is locked:
+* Project containing IP 'mult_gen_0' is read-only. * IP definition 'Multiplier (12.0)' for IP 'mult_gen_0' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'dist_mem_ph' is locked:
+* Project containing IP 'dist_mem_ph' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'ila_1' is locked:
+* Project containing IP 'ila_1' is read-only. * IP definition 'ILA (Integrated Logic Analyzer) (6.2)' for IP 'ila_1' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [Project 1-229] Project 'Demodulate.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1402.055 ; gain = 166.066
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 26 21:02:44 2024...
